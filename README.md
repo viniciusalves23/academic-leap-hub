@@ -1,1 +1,1 @@
-# academic-leap-hub
+# Academic Leap Hub
