@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Academic Leap Hub | Encontre seu Trabalho dos Sonhos</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon (4).png">
+
+  <!-- All Plugins -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/animation.css" rel="stylesheet">
+  <link href="assets/css/dropzone.min.css" rel="stylesheet">
+  <link href="assets/css/flatpickr.min.css" rel="stylesheet">
+  <link href="assets/css/flickity.min.css" rel="stylesheet">
+  <link href="assets/css/lightbox.min.css" rel="stylesheet">
+  <link href="assets/css/magnifypopup.css" rel="stylesheet">
+  <link href="assets/css/select2.min.css" rel="stylesheet">
+  <link href="assets/css/rangeSlider.min.css" rel="stylesheet">
+  <link href="assets/css/prism.css" rel="stylesheet">
+
+  <!-- Fontawesome & Bootstrap Icons CSS -->
+  <link href="assets/css/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/css/fontawesome.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+	<!-- ============================================================== -->
+	<!-- Preloader - style you can find in spinners.css -->
+	<!-- ============================================================== -->
+	<div id="preloader">
+		<div class="preloader"><span></span><span></span></div>
+	</div>
+
+	<!-- ============================================================== -->
+	<!-- Main wrapper - style you can find in pages.scss -->
+	<!-- ============================================================== -->
+	<div id="main-wrapper">
+
+		<!-- ============================== Login Section ================== -->
+		<section class="py-5">
+			<div class="container">
+
+				<div class="row justify-content-center align-items-center m-auto">
+					<div class="col-12">
+						<div class="bg-mode rounded-3 overflow-hidden">
+							<div class="row g-0">
+								<!-- Vector Image -->
+								<div class="col-lg-6 d-flex align-items-center order-2 order-lg-1 bg-dark">
+									<div class="p-3 p-lg-5">
+										<img src="assets/img/auth.png" class="img-fluid" alt="">
+									</div>
+									<!-- Divider -->
+									<div class="vr opacity-1 d-none d-lg-block"></div>
+								</div>
+
+								<!-- Information -->
+								<div class="col-lg-6 order-1 bg-white position-relative">
+									<div class="position-absolute end-0 top-0 mt-3 me-3">
+										<a href="index.html" class="square--40 circle bg-light-danger text-danger"><i class="fa-solid fa-house"></i></a>
+									</div>
+									<div class="p-4 p-sm-7">
+										<!-- Logo -->
+										<a href="index.html">
+											<img class="img-fluid mb-4" src="assets/img/logo-alh2.png" width="200px" height="auto" alt="logo">
+										</a>
+										<!-- Title -->
+										<h1 class="mb-2 fs-2">Autenticação de Dois Fatores</h1>
+										<p class="mb-0">Nós enviamos um código de autenticação para o email teste@gmail.com</p>
+
+										<!-- Form START -->
+										<form class="mt-4 text-start">
+											<div class="form py-4">
+												<div class="form-group">
+													<div class="row">
+														<div class="col-12">
+															<p class="fw-medium text-md">Digite o código que lhe enviamos:</p>
+														</div>
+													</div>
+													<div class="row g-4">
+														<div class="col">
+															<input type="text" class="form-control border br-dashed" maxlength="1" id="input1">
+														</div>
+														<div class="col">
+															<input type="text" class="form-control border br-dashed" maxlength="1" id="input2">
+														</div>
+														<div class="col">
+															<input type="text" class="form-control border br-dashed" maxlength="1" id="input3">
+														</div>
+														<div class="col">
+															<input type="text" class="form-control border br-dashed" maxlength="1" id="input4">
+														</div>
+													</div>
+												</div>
+
+												<div class="modal-flex-item d-flex align-items-center justify-content-between mb-3">
+													<div class="modal-flex-first">
+														<span class="text-md">Não recebeu o código?</span>
+													</div>
+													<div class="modal-flex-last">
+														<a class="fw-medium text-decoration-underline" id="reenviarCodigo" type="button" style="color: #7447E1;">Clique para reenviar</a>
+													</div>
+												</div>
+
+												<div class="form-group">
+													<button type="button" class="btn btn-primary full-width font--bold btn-lg" id="botaoEnviarVerificar">Enviar e Verificar</button>
+												</div>
+											</div>
+
+											<!-- Copyright -->
+											<div class="py-3 text-center">Copyrights ©2024 Academic Leap Hub. Todos direitos reservados.</div>
+
+										</form>
+										<!-- Form END -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- ============================== Login Section End ================== -->
+
+	</div>
+	<!-- ============================================================== -->
+	<!-- End Wrapper -->
+	<!-- ============================================================== -->
+
+	<!-- Modal de reenvio de código -->
+	<div class="modal fade" id="envioCodigoModal" tabindex="-1" role="dialog" aria-labelledby="envioCodigoModal" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered envio-codigo-pop-form" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class="modal-title fs-6">Código Enviado!</h4>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+				</div>
+				<div class="modal-body">
+					<div class="modal-login-form py-2 px-md-3 px-0">
+						<h6 id="MensagemEnvioCodigo" style="color: #7447E1;"></h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<!-- ============================================================== -->
+	<!-- All Jquery -->
+	<!-- ============================================================== -->
+	
+
+
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/flatpickr.js"></script>
+	<script src="assets/js/dropzone.min.js"></script>
+	<script src="assets/js/counterup.min.js"></script>
+	<script src="assets/js/rangeslider.js"></script>
+	<script src="assets/js/select2.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+
+	<script src="assets/js/custom.js"></script>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			// Captura o botão "Enviar e Verificar"
+			var enviarVerificarBtn = document.getElementById('botaoEnviarVerificar');
+	
+			// Adiciona um evento de clique ao botão "Enviar e Verificar"
+			enviarVerificarBtn.addEventListener('click', function () {
+				// Recupera a escolha do usuário do localStorage
+				var tipoCadastro = localStorage.getItem('tipoCadastro');
+	
+				// Verifica qual opção estava marcada anteriormente
+				if (tipoCadastro === 'empresa') {
+					// Redireciona para a página employer-profile.html
+					window.location.href = 'employer-profile.html';
+				} else if (tipoCadastro === 'freelancer') {
+					// Redireciona para a página candidate-profile.html
+					window.location.href = 'candidate-profile.html';
+				} else {
+					// Caso não tenha sido selecionada nenhuma opção, exiba uma mensagem de erro ou tome outra ação apropriada
+					alert('Por favor, selecione se você é uma Empresa ou Freelancer.');
+				}
+			});
+		});
+	</script>
+
+	<script>
+		document.getElementById('reenviarCodigo').addEventListener('click', function() {
+			// Agora, vamos preencher a mensagem na modal com o email fornecido
+			document.getElementById('MensagemEnvioCodigo').innerText = 'Um novo código foi enviado para seu email';
+
+			// Finalmente, mostramos a modal
+			var modal = new bootstrap.Modal(document.getElementById('envioCodigoModal'));
+			modal.show();
+
+		});
+	</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var inputs = document.querySelectorAll('input[type="text"]');
+        
+        inputs.forEach(function(input, index) {
+            input.addEventListener('input', function() {
+                if (this.value.length === 1 && index < inputs.length - 1) {
+                    inputs[index + 1].focus();
+                }
+            });
+
+            input.addEventListener('keyup', function(event) {
+                if (event.keyCode === 8 && index > 0 && this.value.length === 0) {
+                    inputs[index - 1].focus();
+                }
+            });
+        });
+    });
+</script>
+
+	<!-- ============================================================== -->
+	<!-- This page plugins -->
+	<!-- ============================================================== -->
+
+</body>
+
+</html>

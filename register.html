@@ -4,8 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Careercrow - Job Board & Freelance Marketplace HTML Template</title>
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+  <title>Academic Leap Hub | Encontre seu Trabalho dos Sonhos</title>
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon (4).png">
 
   <!-- All Plugins -->
   <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -65,11 +65,11 @@
 									<div class="p-4 p-sm-7">
 										<!-- Logo -->
 										<a href="index.html">
-											<img class="img-fluid mb-4" src="assets/img/icon.png" width="60" alt="logo">
+											<img class="img-fluid mb-4" src="assets/img/logo-alh2.png" width="200px" height="auto" alt="logo">
 										</a>
 										<!-- Title -->
-										<h1 class="mb-2 fs-2">Create New Account</h1>
-										<p class="mb-0">Already a Member?<a href="login.html" class="fw-medium text-primary"> Signin</a></p>
+										<h1 class="mb-2 fs-2">Criar Nova Conta</h1>
+										<p class="mb-0">Já é um membro?<a href="login.html" class="fw-medium" style="color: #7447E1;"> Entrar</a></p>
 
 										<!-- Form START -->
 										<form class="mt-5 text-start">
@@ -79,13 +79,13 @@
 													<div class="flex-first flex-fill mob-100">
 														<a href="#" class="btn bg-white border border-2 text-dark full-width">
 															<i class="fa-brands fa-google-plus-g color--googleplus me-2"></i>
-															<span class="fw-medium text-md">Signin with Google</span>
+															<span class="fw-medium text-md">Cadastre-se com Google</span>
 														</a>
 													</div>
 													<div class="flex-last flex-fill mob-100">
 														<a href="#" class="btn bg-white border border-2 text-dark full-width">
 															<i class="fa-brands fa-facebook color--facebook me-2"></i>
-															<span class="fw-medium text-md">Login with Facebook</span>
+															<span class="fw-medium text-md">Cadastre-se com Facebook</span>
 														</a>
 													</div>
 												</div>
@@ -93,17 +93,38 @@
 
 											<div class="prixer my-5">
 												<div class="devider-wraps position-relative">
-													<div class="devider-text text-muted-2 text-md">Or signin with email</div>
+													<div class="devider-text text-muted-2 text-md">Ou cadastre-se com email</div>
+												</div>
+											</div>
+
+											<div class="form mb-3">
+												<div class="form-group">
+													<label class="form-label">Tipo Cadastro</label>
+													<div class="mb-1"></div>
+													<div class="form-check form-check-inline">
+														<input class="form-check-input" type="radio" name="loginOption" id="empresaRadio" checked>
+														<label class="form-check-label" for="loginOptionEmail" >Empresa</label>
+													</div>
+													<div class="form-check form-check-inline">
+														<input class="form-check-input" type="radio" name="loginOption" id="freelancerRadio"  >
+														<label class="form-check-label" for="loginOptionCPF">Freelancer</label>
+													</div>											
+												
 												</div>
 											</div>
 											
+
+						
+											  <!-- Inputs radio para selecionar entre CPF e Email -->
+											
+
 											<div class="form mb-5">
 												<div class="form-group">
-													<label class="form-label">Enter email ID</label>
-													<input type="email" class="form-control" placeholder="name@example.com">
+													<label class="form-label">Insira seu Email Institucional</label>
+													<input type="email" class="form-control" placeholder="nome@exemplo.com">
 												</div>
 												<div class="form-group">
-													<label class="form-label">Enter Password</label>
+													<label class="form-label">Senha</label>
 													<div class="position-relative">
 														<input type="password" class="form-control" id="password-field" name="password"
 															placeholder="Password">
@@ -113,28 +134,27 @@
 												</div>
 
 												<div class="form-group">
-													<label class="form-label">Confirm Password</label>
+													<label class="form-label">Confirmar Senha</label>
 													<input type="password" class="form-control" placeholder="*********">
 												</div>
 
 												<div class="form-group">
-													<button type="submit" class="btn btn-primary full-width font--bold btn-lg">Create An
-														Account</button>
+													<button type="button" class="btn btn-primary full-width font--bold btn-lg" id="botaoCriarConta">Criar Conta</button>
 												</div>
 
 												<div class="modal-flex-item d-flex align-items-center justify-content-between mb-3">
 													<div class="modal-flex-first">
 														<div class="form-check form-check-inline">
 															<input class="form-check-input" type="checkbox" id="savepassword" value="option1">
-															<label class="form-check-label" for="savepassword">Keep me signed in</label>
+															<label class="form-check-label" for="savepassword">Mantenha-me Conectado</label>
 														</div>
 													</div>
 												</div>
 											</div>
 
 											<!-- Copyright -->
-											<div class="text-primary-hover mt-3 text-center"> Copyrights ©2024CareerCrow.com. Build by <a
-													href="https://www.themezhub.com/">Themezhub</a>. </div>
+											<div class="py-3 text-center">Copyrights ©2024 Academic Leap Hub. Todos direitos reservados.</div>
+
 										</form>
 										<!-- Form END -->
 									</div>
@@ -157,6 +177,48 @@
 	<!-- ============================================================== -->
 	<!-- All Jquery -->
 	<!-- ============================================================== -->
+	<!-- <script>
+		document.addEventListener("DOMContentLoaded", function () {
+			// Captura o botão "Criar Conta"
+			var criarContaBtn = document.getElementById('botaoCriarConta');
+	
+			// Adiciona um evento de clique ao botão "Criar Conta"
+			criarContaBtn.addEventListener('click', function () {
+				// Captura os botões de opção
+				var empresaRadio = document.getElementById('empresaRadio');
+				var freelancerRadio = document.getElementById('freelancerRadio');
+	
+				// Verifica se o botão de opção Empresa está marcado
+				if (empresaRadio.checked) {
+					// Redireciona para a página employer-profile.html
+					window.location.href = 'employer-profile.html';
+				} else if (freelancerRadio.checked) {
+					// Redireciona para a página candidate-profile.html
+					window.location.href = 'candidate-profile.html';
+				} else {
+					// Caso nenhum botão de opção esteja marcado, exiba uma mensagem de erro ou tome outra ação apropriada
+					alert('Por favor, selecione se você é uma Empresa ou Freelancer.');
+				}
+			});
+		});
+	</script> -->
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			// Captura o botão "Criar Conta"
+			var criarContaBtn = document.getElementById('botaoCriarConta');
+	
+			// Adiciona um evento de clique ao botão "Criar Conta"
+			criarContaBtn.addEventListener('click', function () {
+				// Define a escolha do usuário no localStorage
+				var empresaRadio = document.getElementById('empresaRadio');
+				var tipoCadastro = empresaRadio.checked ? 'empresa' : 'freelancer';
+				localStorage.setItem('tipoCadastro', tipoCadastro);
+	
+				// Redireciona para a página two-factor-auth.html
+				window.location.href = 'two-factor-auth.html';
+			});
+		});
+	</script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/popper.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
