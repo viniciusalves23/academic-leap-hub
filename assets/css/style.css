@@ -5279,7 +5279,6 @@ span.noti-status {
 /*-------------- Navbar & Header Styles: Candidate & Employer Dashboard -------------*/
 .dashboard-wrap {
   min-height: calc(100vh - 75px);
-  display: flex;
   flex-wrap: wrap;
   padding-top: 75px !important;
 }
