@@ -312,19 +312,21 @@
                 <div class="dashboard-inner">
       
                   <ul data-submenu-title="Navegação">
-                    
+                   
                     <li><a href="candidate-dashboard.html"><i class="fa-solid fa-gauge-high me-2"></i>Painel do Candidato</a></li>
-						
-					<li id="painel-financeiro" class="active" role="button" >
-							<a href="#" role="button"><i class="fi fi-rr-donate me-2" role="button"></i>Financeiro</a>
-							<ul id="submenu-painel-financeiro" class="submenu" style="display: none; margin: 0 !important;background-color: #ece7fa; padding-left: 10px !important;">
-								<li><a href="painel-financas.html"><i class="fi fi-rr-chart-histogram me-2"></i>Painel Financeiro</a></li>
-                                <li style="background-color: #7447E1;"><a href="carteira.html"><i style="color: #ffffff;" class="fi fi-rr-wallet me-2"></i><strong style="color: #ffffff;">Carteira</strong></a></li>
-								<li><a href="saque.html"><i class="fi fi-rr-money-bill-wave-alt me-2"></i>Saque</a></li>
-								<li><a href="historico-transacoes.html"><i class="fi fi-rr-exchange me-2"></i>Histórico de Transações</a></li>
-								<li><a href="historico-pagamentos.html"><i class="fi fi-rs-receipt me-2"></i>Histórico de Pagamentos</a></li>
-							</ul>
-					</li>
+                    
+                    
+                    <li id="painel-financeiro" class="active" role="button" >
+                        <a href="#" role="button"><i class="fi fi-rr-donate me-2" role="button"></i>Financeiro</a>
+                        <ul id="submenu-painel-financeiro" class="submenu" style="display: none; margin: 0 !important;background-color: #ece7fa; padding-left: 10px !important;">
+                            <li><a href="painel-financas.html"><i class="fi fi-rr-chart-histogram me-2"></i>Painel Financeiro</a></li>
+                            <li><a href="carteira.html"><i class="fi fi-rr-wallet me-2"></i>Carteira</a></li>
+                            <li><a href="saque.html"><i  class="fi fi-rr-money-bill-wave-alt me-2"></i>Saque</a></li>
+                            <li style="background-color: #7447E1;"><a href="historico-transacoes.html"><i style="color: #ffffff;" class="fi fi-rr-exchange me-2"></i><strong style="color: #ffffff;">Histórico de Transações</strong></a></li>
+                            <li><a href="historico-pagamentos.html"><i class="fi fi-rs-receipt me-2"></i>Histórico de Pagamentos</a></li>
+                        </ul>
+                    </li>
+
 
                     <li><a href="candidate-profile.html"><i class="fa-regular fa-user me-2"></i>Meu Perfil </a></li>
                     <li><a href="candidate-resume.html"><i class="fa-solid fa-file-pdf me-2"></i>Meus Currículos</a></li>
@@ -346,12 +348,12 @@
               <div class="dashboard-tlbar d-block mb-4">
                 <div class="row">
                   <div class="colxl-12 col-lg-12 col-md-12">
-                    <h1 class="mb-1 fs-3 fw-medium">Carteira</h1>
+                    <h1 class="mb-1 fs-3 fw-medium">Histórico de Transações</h1>
                     <nav aria-label="breadcrumb">
                       <ol class="breadcrumb">
                         <li class="breadcrumb-item text-muted"><a href="candidate-dashboard.html">Candidato</a></li>
                         <li class="breadcrumb-item"><a href="candidate-dashboard.html">Painel Financeiro</a></li>
-                        <li class="breadcrumb-item"><a href="candidate-dashboard.html" style="color: #7447E1;">Carteira</a></li>
+                        <li class="breadcrumb-item"><a href="historico-transacoes" style="color: #7447E1;">Histórico de Transações</a></li>
                       </ol>
                     </nav>
                   </div>
@@ -359,297 +361,81 @@
               </div>
       
               <div class="dashboard-widg-bar d-block">
-
-                <div class="wallet-tab">
-                    <div class="row g-0">
-
-                        <div class="col-xl-3">
-                            <div class="nav d-block">
-                                <div class="row">
-
-                                    <!-- option SALDO DA CARTEIRA -->
-                                    <div class="col-xl-12 col-md-6" >
-                                        <div class="wallet-nav active" id="div_saldo_carteira">
-                                            <div class="wallet-nav-icon"><span class="mt-2"><i class="fi fi-rr-wallet"></i></span>
-                                            </div>
-                                            <div class="wallet-nav-text">
-                                                <h3>Saldo da Carteira</h3>
-                                                <p>R$ 2.139,00</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- option PENDENTE -->
-                                    <div class="col-xl-12 col-md-6" >
-                                        <div class="wallet-nav" id="div_saldo_pendente">
-                                            <div class="wallet-nav-icon"><span><i
-                                                        class="fi fi-rr-money-bill-wave-alt"></i></span></div>
-                                            <div class="wallet-nav-text">
-                                                <h3>Pendente</h3>
-                                                <p>R$ 450,00</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <!-- CARD ADCIONAR CONTA BANCARIA -->
-                            <div class="add-card-link">
-                                <h5 class="mb-0">Adicionar Conta Bancária</h5><a href="/add-new-account"><i
-                                        class="fi fi-rr-square-plus"></i></a>
-                            </div>
-
+                <div class="col-xxl-12 col-xl-12 col-lg-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <h4 class="card-title">Histórico de Transações</h4>
+                      </div>
+                      <div class="card-body">
+                        <div class="transaction-table">
+                          <div class="table-responsive">
+                            <table class="table mb-0 table-responsive-sm">
+                              <thead>
+                                <tr>
+                                  <th>Tipo</th>
+                                  <th>Data e Hora</th>
+                                  <th>Descrição</th>
+                                  <th>Quantia</th>
+                                  <th>Situação</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+    
+                                <tr>
+                                  <td><span class="table-category-icon"><i class="bg-success fi fi-rr-arrow-trend-up"></i>Pagamento</span></td>
+                                  <td>05/02/2024 18:05</td>
+                                  <td>USJT - Designer UI/UX</td>
+                                  <td>+450,00</td>
+                                  <td> <span style="font-size: 12px; background: #fff; padding: 2px 10px; border-radius: 16px; display: inline-block;" class="text-white bg-warning">Pendente</span></td>
+                                </tr>
+    
+                                <tr>
+                                  <td><span class="table-category-icon"><i class="bg-danger fi fi-rr-arrow-trend-down"></i>Saque</span></td>
+                                  <td> 18/01/2024 14:37</td>
+                                  <td>Saque da Conta</td>
+                                  <td>-955,00</td>
+                                  <td> <span style="font-size: 12px; background: #fff; padding: 2px 10px; border-radius: 16px; display: inline-block;" class="text-white bg-success">Concluído</span></td>
+                                </tr>
+    
+                                <tr>
+                                  <td><span class="table-category-icon"><i class="bg-danger fi fi-rr-arrow-trend-down"></i>Saque</span></td>
+                                  <td>11/01/2024 12:20</td>
+                                  <td>Saque da Conta</td>
+                                  <td>-370,00</td>
+                                  <td> <span style="font-size: 12px; background: #fff; padding: 2px 10px; border-radius: 16px; display: inline-block;" class="text-white bg-success">Concluído</span></td>
+                                </tr>
+                                
+                                <tr>
+                                  <td><span class="table-category-icon"><i class="bg-success fi fi-rr-arrow-trend-up"></i>Pagamento</span></td>
+                                  <td>05/01/2024 18:10</td>
+                                  <td>USJT - Designer UI/UX</td>
+                                  <td>+450,00</td>
+                                  <td> <span style="font-size: 12px; background: #fff; padding: 2px 10px; border-radius: 16px; display: inline-block;" class="text-white bg-success">Concluído</span></td>
+                                </tr>
+    
+                                <tr>
+                                  <td><span class="table-category-icon"><i class="bg-danger fi fi-rr-arrow-trend-down"></i>SAQUE</span></td>
+                                  <td>01/01/2024 13:55</td>
+                                  <td>Saque da Conta</td>
+                                  <td>-450,00</td>
+                                  <td> <span style="font-size: 12px; background: #fff; padding: 2px 10px; border-radius: 16px; display: inline-block;" class="text-white bg-success">Concluído</span></td>
+                                </tr>
+    
+                                <tr>
+                                  <td><span class="table-category-icon"><i class="bg-success fi fi-rr-arrow-trend-up"></i>Pagamento</span></td>
+                                  <td>05/12/2023 18:00</td>
+                                  <td>USJT - Designer UI/UX</td>
+                                  <td>+450,00</td>
+                                  <td> <span style="font-size: 12px; background: #fff; padding: 2px 10px; border-radius: 16px; display: inline-block;" class="text-white bg-danger">Cancelado</span></td>
+                                </tr>
+    
+                              </tbody>
+                            </table>
+                          </div>
                         </div>
-
-                        <div class="col-xl-9">
-                            <div class="tab-content wallet-tab-content">
-
-                                <!-- TAB PANE INFORMAÇÕES CARTEIRA -->
-                                <div id="tab-pane-carteira" class="tab-pane fade show active">
-                                    <!-- titulo INFORMAÇÕES CARTEIRA -->
-                                    <div class="wallet-tab-title">
-                                        <h3>Informações da Carteira</h3>
-                                    </div>
-
-                                    <!-- row cards -->
-                                    <div class="row">
-                                        <!-- CARD SALDO DISPONIVEL -->
-                                        <div class="col-xxl-6 col-xl-6 col-lg-6">
-                                            <div class="card">
-                                                <div class="card-body">
-                                                    <div class="wallet-total-balance">
-                                                        <p class="mb-0">Saldo Disponível</p>
-                                                        <div style="display: flex; align-items: center; justify-content: space-between;">
-                                                            <h2>R$ 2.139,00</h2>
-                                                            <button style="font-size: 12px; border: 1px solid #7447E1; color: #ffffff !important; background-color: #7447E1;"><a href="saque.html" style="color: #fff;">Sacar</a></button>
-                                                        </div>
-                                                       
-                                                    </div>
-                                                    <div class="funds-credit">
-                                                        <p class="mb-0">Total Saque Realizado</p>
-                                                        <h5>R$5.915,00</h5>
-                                                    </div>
-                                                    <div class="funds-credit">
-                                                        <p class="mb-0">Limite Saque</p>
-                                                        <h5>R$3.0000,00 / mês</h5>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- CARD CONTA BANCARIA -->
-                                        <div class="col-xxl-6 col-xl-6 col-lg-6">
-                                            <div class="credit-card visa">
-                                                <div class="type-brand">
-                                                    <h4>Minha conta bancária: **** 1234</h4><img src="/assets/img/mastercard.png" alt="" style="width: 58px; height: auto;"/>
-                                                </div>
-                                                <div class="cc-number">
-                                                    <h6>****</h6>
-                                                    <h6>****</h6>
-                                                    <h6>****</h6>
-                                                    <h6>1234</h6>
-                                                </div>
-                                                <div class="cc-holder-exp">
-                                                    <h5>Nubank</h5>
-                                                    <span style="padding: 5px; border-radius: 50px" class=" text-white bg-success">Padrão</span>
-                                                </div>
-                                                <div class="cc-info">
-                                                    <div class="row justify-content-between align-items-center">
-                                                        <div class="col-5">
-                                                            <div class="d-flex">
-                                                                <p class="me-3">Status</p>
-                                                                <p><strong>Active</strong></p>
-                                                            </div>
-                                                            <div class="d-flex">
-                                                                <p class="me-3">Currency</p>
-                                                                <p><strong>USD</strong></p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-xl-7">
-                                                            <div class="d-flex justify-content-between">
-                                                                <div class="ms-3">
-                                                                    <p>Credit Limit</p>
-                                                                    <p><strong>2000 USD</strong></p>
-                                                                </div>
-                                                                <div id="circle1"></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                                       
-                                        <!-- TABELA HISTÓRICO TRANSAOCOES -->
-                                        <div class="col-x-12">
-                                            <div class="card">
-                                              <div class="card-header">
-                                                <h4 class="card-title">Histórico de Transações</h4>
-                                                <a href="historico-transacoes.html">Ver Tudo</a>
-                                              </div>
-                                              <div class="card-body">
-                                                <div class="transaction-table">
-                                                  <div class="table-responsive">
-                                                    <table class="table mb-0 table-responsive-sm">
-                                                      <thead>
-                                                        <tr>
-                                                          <th>Tipo</th>
-                                                          <th>Data e Hora</th>
-                                                          <th>Descrição</th>
-                                                          <th>Quantia</th>
-                                                          <th>Situação</th>
-                                                        </tr>
-                                                      </thead>
-                                                      <tbody>
-                            
-                                                        <tr>
-                                                          <td><span class="table-category-icon"><i class="bg-success fi fi-rr-arrow-trend-up"></i>Pagamento</span></td>
-                                                          <td>05/02/2024 18:05</td>
-                                                          <td>USJT - Designer UI/UX</td>
-                                                          <td>+450,00</td>
-                                                          <td> <span style="font-size: 12px; background: #fff; padding: 2px 10px; border-radius: 16px; display: inline-block;" class="text-white bg-warning">Pendente</span></td>
-                                                        </tr>
-                            
-                                                        <tr>
-                                                          <td><span class="table-category-icon"><i class="bg-danger fi fi-rr-arrow-trend-down"></i>Saque</span></td>
-                                                          <td> 18/01/2024 14:37</td>
-                                                          <td>Saque da Conta</td>
-                                                          <td>-955,00</td>
-                                                          <td> <span style="font-size: 12px; background: #fff; padding: 2px 10px; border-radius: 16px; display: inline-block;" class="text-white bg-success">Concluído</span></td>
-                                                        </tr>
-                            
-                                                        <tr>
-                                                          <td><span class="table-category-icon"><i class="bg-danger fi fi-rr-arrow-trend-down"></i>Saque</span></td>
-                                                          <td>11/01/2024 12:20</td>
-                                                          <td>Saque da Conta</td>
-                                                          <td>-370,00</td>
-                                                          <td> <span style="font-size: 12px; background: #fff; padding: 2px 10px; border-radius: 16px; display: inline-block;" class="text-white bg-success">Concluído</span></td>
-                                                        </tr>
-                                                        
-                                                        <tr>
-                                                          <td><span class="table-category-icon"><i class="bg-success fi fi-rr-arrow-trend-up"></i>Pagamento</span></td>
-                                                          <td>05/01/2024 18:10</td>
-                                                          <td>USJT - Designer UI/UX</td>
-                                                          <td>+450,00</td>
-                                                          <td> <span style="font-size: 12px; background: #fff; padding: 2px 10px; border-radius: 16px; display: inline-block;" class="text-white bg-success">Concluído</span></td>
-                                                        </tr>
-                            
-                                                        <tr>
-                                                          <td><span class="table-category-icon"><i class="bg-danger fi fi-rr-arrow-trend-down"></i>SAQUE</span></td>
-                                                          <td>01/01/2024 13:55</td>
-                                                          <td>Saque da Conta</td>
-                                                          <td>-450,00</td>
-                                                          <td> <span style="font-size: 12px; background: #fff; padding: 2px 10px; border-radius: 16px; display: inline-block;" class="text-white bg-success">Concluído</span></td>
-                                                        </tr>
-                            
-                                                        <tr>
-                                                          <td><span class="table-category-icon"><i class="bg-success fi fi-rr-arrow-trend-up"></i>Pagamento</span></td>
-                                                          <td>05/12/2023 18:00</td>
-                                                          <td>USJT - Designer UI/UX</td>
-                                                          <td>+450,00</td>
-                                                          <td> <span style="font-size: 12px; background: #fff; padding: 2px 10px; border-radius: 16px; display: inline-block;" class="text-white bg-danger">Cancelado</span></td>
-                                                        </tr>
-                            
-                                                      </tbody>
-                                                    </table>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-
-                                    </div>
-
-                                </div>
-
-                                <!-- tab pane INFORMAÇÕES SALDO PENDENTE -->
-                                <div id="tab-pane-pendente" class="tab-pane fade ">
-                                    <div class="wallet-tab-title">
-                                        <h3>Informações de Saldo Pendente</h3>
-                                    </div>
-                                    <div class="row">
-
-                                        <!-- CAR TOTAL RECEBER -->
-                                        <div class="col-xxl-6 col-xl-6 col-lg-6">
-                                            <div class="card">
-                                                <div class="card-body">
-
-                                                    <div class="wallet-total-balance">
-                                                        <p class="mb-0">Total a Receber</p>
-                                                        <h2>R$ 450,00</h2>
-                                                    </div>
-
-                                                    <div class="funds-credit">
-                                                        <p class="mb-0">Qtde Trabalhos a Receber</p>
-                                                        <h5>01</h5>
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- CARD TOTAL REEBIDOS -->
-                                        <div class="col-xxl-6 col-xl-6 col-lg-6">
-                                            <div class="card">
-                                                <div class="card-body">
-
-                                                    <div class="wallet-total-balance">
-                                                        <p class="mb-0">Total Trabalhados/Recebidos</p>
-                                                        <h2>R$ 8.054,00</h2>
-                                                    </div>
-
-                                                    <div class="funds-credit">
-                                                        <p class="mb-0">Qtde Trabalhos Realizados</p>
-                                                        <h5>135</h5>
-                                                    </div>
-
-                                                 
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- TABELA HISTORICO A RECEBER -->
-                                        <div class="col-xl-12">
-                                            <div class="card">
-                                              <div class="card-header">
-                                                <h4 class="card-title">Pagamentos a Receber</h4>
-                                              </div>
-                                              <div class="card-body">
-                                                <div class="transaction-table">
-                                                  <div class="table-responsive">
-                                                    <table class="table mb-0 table-responsive-sm">
-                                                      <thead>
-                                                        <tr>
-                                                          <th>Tipo</th>
-                                                          <th>Descrição</th>
-                                                          <th>Quantia</th>
-                                                          <th>Situação</th>
-                                                        </tr>
-                                                      </thead>
-                                                      <tbody>
-                            
-                                                        <tr>
-                                                          <td><span class="table-category-icon"><i class="bg-success fi fi-rr-arrow-trend-up"></i>Pagamento</span></td>
-                                                          <td>USJT - Designer UI/UX</td>
-                                                          <td>+450,00</td>
-                                                          <td> <span style="font-size: 12px; background: #fff; padding: 2px 10px; border-radius: 16px; display: inline-block;" class="text-white bg-warning">Pendente</span></td>
-                                                        </tr>
-                                                                
-                                                      </tbody>
-                                                    </table>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
+                      </div>
                     </div>
-                </div>
-
+                  </div>
               </div>
               
               <!-- footer -->
@@ -684,7 +470,7 @@
 
 	<script src="assets/js/custom.js"></script>
 
-    <script>
+  <script>
     document.addEventListener("DOMContentLoaded", function() {
         const menuToggle = document.getElementById("painel-financeiro");
         const submenu = document.getElementById("submenu-painel-financeiro");
@@ -716,38 +502,7 @@
             });
         }
     });
-    </script>
-
-    <script>
-        // Seleciona as divs de saldo
-        const saldoCarteiraDiv = document.getElementById("div_saldo_carteira");
-        const saldoPendenteDiv = document.getElementById("div_saldo_pendente");
-
-        // Seleciona as tab panes correspondentes
-        const tabPaneCarteira = document.getElementById("tab-pane-carteira");
-        const tabPanePendente = document.getElementById("tab-pane-pendente");
-
-        // Adiciona listeners de clique às divs de saldo
-        saldoCarteiraDiv.addEventListener("click", () => {
-            // Remove a classe "active" da div de saldo pendente e adiciona à div de saldo carteira
-            saldoPendenteDiv.classList.remove("active");
-            saldoCarteiraDiv.classList.add("active");
-
-            // Adiciona as classes "show active" à tab pane de carteira e remove da tab pane pendente
-            tabPanePendente.classList.remove("show", "active");
-            tabPaneCarteira.classList.add("show", "active");
-        });
-
-        saldoPendenteDiv.addEventListener("click", () => {
-            // Remove a classe "active" da div de saldo carteira e adiciona à div de saldo pendente
-            saldoCarteiraDiv.classList.remove("active");
-            saldoPendenteDiv.classList.add("active");
-
-            // Adiciona as classes "show active" à tab pane de pendente e remove da tab pane carteira
-            tabPaneCarteira.classList.remove("show", "active");
-            tabPanePendente.classList.add("show", "active");
-        });
-    </script>
+  </script>
 
 </body>
 

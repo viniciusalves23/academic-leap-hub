@@ -314,18 +314,18 @@
           <div class="dashboard-inner">
 
             <ul data-submenu-title="Navegação">
-              <li><a href="candidate-dashboard.html"><i class="fa-solid fa-gauge-high me-2"></i>Painel do Candidato</a></li>
               
-              <li id="painel-financeiro" class="active" role="button">
-                <a role="button"><i class="fi fi-rr-chart-histogram me-2" role="button"></i>Financeiro
-                </a>
-                <ul id="submenu-painel-financeiro" class="submenu" style="display: none; margin: 0 !important;">
-                    <li style="background-color: #7447E1;"><a href="painel-financas.html"><i style="color: #ffffff;" class="fi fi-rr-wallet me-2"></i><strong style="color: #ffffff;">Painel Financeiro</strong></a></li>
+              <li><a href="candidate-dashboard.html"><i class="fa-solid fa-gauge-high me-2"></i>Painel do Candidato</a></li>
+						
+              <li id="painel-financeiro" class="active" role="button" >
+                  <a href="#" role="button"><i class="fi fi-rr-donate me-2" role="button"></i>Financeiro</a>
+                  <ul id="submenu-painel-financeiro" class="submenu" style="display: none; margin: 0 !important;background-color: #ece7fa; padding-left: 10px !important;">
+                    <li style="background-color: #7447E1;"><a href="painel-financas.html"><i style="color: #ffffff;" class="fi fi-rr-chart-histogram me-2"></i><strong style="color: #ffffff;">Painel Financeiro</strong></a></li>
                     <li><a href="carteira.html"><i class="fi fi-rr-wallet me-2"></i>Carteira</a></li>
-                    <li><a href="#"><i class="fi fi-rr-money-bill-wave-alt me-2"></i>Saque</a></li>
-                    <li><a href="#"><i class="fi fi-rr-exchange me-2"></i>Histórico de Transações</a></li>
-                    <li><a href="#"><i class="fi fi-rs-receipt me-2"></i>Histórico de Pagamentos</a></li>
-                </ul>
+                    <li><a href="saque.html"><i class="fi fi-rr-money-bill-wave-alt me-2"></i>Saque</a></li>
+                    <li><a href="historico-transacoes.html"><i class="fi fi-rr-exchange me-2"></i>Histórico de Transações</a></li>
+                    <li><a href="historico-pagamentos.html"><i class="fi fi-rs-receipt me-2"></i>Histórico de Pagamentos</a></li>
+                  </ul>
               </li>
                   
               <li><a href="candidate-profile.html"><i class="fa-regular fa-user me-2"></i>Meu Perfil </a></li>
@@ -435,10 +435,10 @@
                 </div>
               </div>
 
-              <div class="col-xxl-4 col-xl-4 col-lg-6">
-                <div class="card" style="height: 94%">
+              <div class="col-xxl-4 col-xl-4 col-lg-6 tabela_historico_pagamentos">
+                <div class="card card_table_historico_pagamentos">
                   <div class="card-header">
-                    <h4 class="card-title">Histórico de Pagamentos</h4><a href="#">Ver Tudo</a>
+                    <h4 class="card-title">Histórico de Pagamentos</h4><a href="historico-pagamentos.html">Ver Tudo</a>
                   </div>
                   <div class="card-body" >
                     <div class="invoice-content">
@@ -516,7 +516,7 @@
                 <div class="card">
                   <div class="card-header">
                     <h4 class="card-title">Histórico de Transações</h4>
-                    <a href="#">Ver Tudo</a>
+                    <a href="historico-transacoes.html">Ver Tudo</a>
                   </div>
                   <div class="card-body">
                     <div class="transaction-table">
@@ -524,7 +524,7 @@
                         <table class="table mb-0 table-responsive-sm">
                           <thead>
                             <tr>
-                              <th>Tipo</th>
+                              <th class="th_tipo">Tipo</th>
                               <th>Data e Hora</th>
                               <th>Descrição</th>
                               <th>Quantia</th>
@@ -566,7 +566,7 @@
                             </tr>
 
                             <tr>
-                              <td><span class="table-category-icon"><i class="bg-danger fi fi-rr-arrow-trend-down"></i>SAQUE</span></td>
+                              <td><span class="table-category-icon"><i class="bg-danger fi fi-rr-arrow-trend-down"></i>Saque</span></td>
                               <td>01/01/2024 13:55</td>
                               <td>Saque da Conta</td>
                               <td>-450,00</td>
@@ -623,6 +623,10 @@
 
 	<script src="assets/js/custom.js"></script>
 
+
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.35.0/dist/apexcharts.min.js"></script>
+
+  
   <script>
     document.addEventListener("DOMContentLoaded", function() {
         const menuToggle = document.getElementById("painel-financeiro");
@@ -655,10 +659,8 @@
             });
         }
     });
-</script>
+    </script>
 
-
-  <script src="https://cdn.jsdelivr.net/npm/apexcharts@3.35.0/dist/apexcharts.min.js"></script>
 
 
   <script>

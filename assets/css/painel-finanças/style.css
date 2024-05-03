@@ -66967,7 +66967,7 @@ textarea.form-control-lg {
     color: var(--bs-body-color);
     text-align: center;
     white-space: nowrap;
-    background-color: var(--bs-tertiary-bg);
+    background-color: #7447e1;
     border: var(--bs-border-width) solid var(--bs-border-color);
     border-radius: var(--bs-border-radius)
 }
@@ -80516,7 +80516,7 @@ input:-internal-autofill-selected {
 
 .input-group-text {
     padding: 11px 15px;
-    background: #2f2cd8;
+    background: #7447e1;
     margin-bottom: 0!important;
     color: #fff;
     border-color: #e5eaef;
@@ -80695,23 +80695,33 @@ label.error {
 .table th {
     color: #1f2c73;
     border-bottom: 1px solid #e5eaef!important;
-    background-color: transparent
+    background-color: transparent;
+    text-align: center;
 }
 
+
 .table th:last-child {
-    text-align: right
+    text-align: center;
+}
+
+
+
+.table tr:first-child td {
+    text-align: center;
 }
 
 .table-responsive-sm {
-    min-width: 48rem
+    min-width: 0;
 }
 
 .table {
     margin-bottom: 0
 }
 
+
 .table tr:last-child td {
-    border-bottom: 0 solid #e5eaef
+    border-bottom: 0 solid #e5eaef;
+    text-align: center;
 }
 
 .table tr td {
@@ -80719,11 +80729,12 @@ label.error {
     border-bottom: 1px solid #e5eaef;
     vertical-align: middle;
     padding: 15px 5px;
-    color: #7184ad
+    color: #7184ad;
+    text-align: center;
 }
 
 .table tr td:last-child {
-    text-align: right
+    text-align: center;
 }
 
 .table-striped tr td,.table-striped tr th {
@@ -81399,9 +81410,75 @@ label.error {
 }
 
 .table-category-icon {
-    display: flex;
     align-items: center;
-    font-size: 15px
+    font-size: 15px;
+    text-align: center;
+}
+
+@media (min-width: 992px) {
+    .table-category-icon {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .table-category-icon i {
+        display: inline-block;
+        line-height: 0px;
+        margin-right: 10px;
+        height: 35px;
+        width: 35px;
+        color: #fff;
+        padding: 9px 10px;
+        border-radius: 100px;
+        font-size: 16px;
+    }
+
+    .th_tipo{
+        text-align: left !important;
+    }
+
+    .card_table_historico_pagamentos{
+        height: 94% !important;
+    }
+
+    .tabela_historico_pagamentos{
+        margin-bottom: 0 !important;
+    }
+
+    .table tr {
+        display: "" !important;
+        text-align: center;
+    }
+
+    #modal_confirmacao_saque { 
+        padding-left: 35%;
+    }
+
+}
+
+.tabela-confirmacao-saque tr {
+    display: flex;
+    justify-content: space-between;
+}
+
+.td_banco_destino_label{
+    text-align: left !important;
+}
+
+.td_banco_destino_nome{
+    text-align: right !important;
+}
+
+
+
+
+.tabela_historico_pagamentos{
+ margin-bottom: 30px;   
+}
+
+.card_table_historico_pagamentos{
+    height: 100%;
 }
 
 .table-category-icon i {
