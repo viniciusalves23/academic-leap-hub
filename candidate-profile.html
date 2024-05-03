@@ -5,9 +5,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Academic Leap Hub | Encontre seu Trabalho dos Sonhos</title>
-	<link rel="icon" type="image/x-icon" href="assets/img/favicon (4).png">
-	
-	<!-- All Plugins -->
+     <link rel="icon" type="image/x-icon" href="assets/img/favicon (4).png">
+
+  <!-- All Plugins -->
 	<link href="assets/css/animation.css" rel="stylesheet">
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="assets/css/dropzone.min.css" rel="stylesheet">
@@ -21,23 +21,18 @@
 	<!-- Icons CSS -->
 	<link href="assets/css/fontawesome.css" rel="stylesheet">
 	<link href="assets/css/bootstrap-icons.css" rel="stylesheet">
-
-	<!-- Custom CSS -->
-	<link href="assets/css/style.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/assets/css/painel-finanças/style.css" />
+  <link rel="stylesheet" href="/assets/css/painel-finanças/style2.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
 
 <body class="gray-simple">
 
-  <!-- ============================================================== -->
-  <!-- Preloader - style you can find in spinners.css -->
-  <!-- ============================================================== -->
   <div id="preloader">
     <div class="preloader"><span></span><span></span></div>
   </div>
 
-  <!-- ============================================================== -->
-  <!-- Main wrapper - style you can find in pages.scss -->
-  <!-- ============================================================== -->
   <div id="main-wrapper">
 
     <!-- ============================================================== -->
@@ -329,6 +324,17 @@
 				<div class="dashboard-inner">
 					<ul data-submenu-title="Navegação">
 						<li><a href="candidate-dashboard.html"><i class="fa-solid fa-gauge-high me-2"></i>Painel do Candidato</a></li>
+						<li id="painel-financeiro" role="button" >
+							<a href="#" role="button"><i class="fi fi-rr-donate me-2" role="button"></i>Financeiro</a>
+							<ul id="submenu-painel-financeiro" class="submenu" style="display: none; margin: 0 !important;background-color: #ece7fa; padding-left: 10px !important;">
+								<li><a href="painel-financas.html"><i class="fi fi-rr-chart-histogram me-2"></i>Painel Financeiro</a></li>
+								<li><a href="carteira.html"><i class="fi fi-rr-wallet me-2"></i>Carteira</a></li>
+								<li><a href="saque.html"><i class="fi fi-rr-money-bill-wave-alt me-2"></i>Saque</a></li>
+								<li><a href="contas-bancarias.html"><i class="fi fi-rs-bank me-2"></i>Contas Bancárias</a></li>
+								<li><a href="historico-transacoes.html"><i class="fi fi-rr-exchange me-2"></i>Histórico de Transações</a></li>
+								<li><a href="historico-pagamentos.html"><i class="fi fi-rs-receipt me-2"></i>Histórico de Pagamentos</a></li>
+							</ul>
+						</li>
 						<li class="active"><a href="candidate-profile.html"><i class="fa-regular fa-user me-2"></i>Meu Perfil </a></li>
 						<li><a href="candidate-resume.html"><i class="fa-solid fa-file-pdf me-2"></i>Meus Currículos</a></li>
 						<li><a href="candidate-applied-jobs.html"><i class="fa-regular fa-paper-plane me-2"></i>Trabalhos Aplicados</a></li>
@@ -666,14 +672,7 @@
 
 
   </div>
-  <!-- ============================================================== -->
-  <!-- End Wrapper -->
-  <!-- ============================================================== -->
 
-
-	<!-- ============================================================== -->
-	<!-- All Jquery -->
-	<!-- ============================================================== -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/popper.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
@@ -685,9 +684,35 @@
 	<script src="assets/js/owl.carousel.min.js"></script>
 
 	<script src="assets/js/custom.js"></script>
-	<!-- ============================================================== -->
-	<!-- This page plugins -->
-	<!-- ============================================================== -->
+	
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const menuToggle = document.getElementById("painel-financeiro");
+			const submenu = document.getElementById("submenu-painel-financeiro");
+
+			menuToggle.addEventListener("click", function(event) {
+				const isActive = this.classList.contains("active");
+				closeAllSubmenus();
+				if (!isActive) {
+					this.classList.add("active");
+					submenu.style.display = "block";
+				} else {
+					this.classList.remove("active");
+					submenu.style.display = "none";
+				}
+			});
+
+		
+
+			function closeAllSubmenus() {
+				const allActiveMenus = document.querySelectorAll(".dashboard-nav > li.active");
+				allActiveMenus.forEach(function(activeMenu) {
+					activeMenu.classList.add("active");
+					activeMenu.querySelector(".submenu").style.display = "none";
+				});
+			}
+		});
+	</script>
 
 </body>
 

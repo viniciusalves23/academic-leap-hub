@@ -5,9 +5,9 @@
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Academic Leap Hub | Encontre seu Trabalho dos Sonhos</title>
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon (4).png">
-
-  <!-- All Plugins -->
+	<link rel="icon" type="image/x-icon" href="assets/img/favicon (4).png">
+	
+	<!-- All Plugins -->
 	<link href="assets/css/animation.css" rel="stylesheet">
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="assets/css/dropzone.min.css" rel="stylesheet">
@@ -21,13 +21,15 @@
 	<!-- Icons CSS -->
 	<link href="assets/css/fontawesome.css" rel="stylesheet">
 	<link href="assets/css/bootstrap-icons.css" rel="stylesheet">
-  
-  <link rel="stylesheet" href="/assets/css/painel-finanças/style.css" />
-  <link rel="stylesheet" href="/assets/css/painel-finanças/style2.css" />
-  <link rel="stylesheet" href="/assets/css/style.css" />
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="/assets/css/painel-finanças/style.css" />
+  	<link rel="stylesheet" href="/assets/css/painel-finanças/style2.css" />
+	<link href="assets/css/style.css" rel="stylesheet">
 </head>
 
-<body class="gray-simple"><!--$-->
+<body class="gray-simple">
+    
     <div id="main-wrapper">
 
         <div class="header header-light head-fixed">
@@ -291,172 +293,151 @@
         <div class="dashboard-wrap">
 
             <a class="mobNavigation btn btn-md btn-primary fw-medium full-width my-2" data-bs-toggle="collapse" href="#MobNav" role="button" aria-expanded="false" aria-controls="MobNav">
-              <i class="fas fa-bars me-2"></i>Navegação
+                <i class="fas fa-bars me-2"></i>Navegação
             </a>
-      
-            <div class="collapse" id="MobNav">
-              <div class="dashboard-nav">
-                <div class="dash-user-blocks pt-5 px-3">
-                  <div class="jbs-grid-usrs-thumb">
-                    <div class="jbs-grid-yuo full-width">
-                      <figure class="w-25 h-25 circle overflow-hidden mx-auto"><img src="assets/img/team-1.jpg" class="img-fluid circle" alt=""></figure>
-                    </div>
-                  </div>
-                  <div class="jbs-grid-usrs-caption mb-3">
-                    <div class="jbs-tiosk text-center">
-                      <h4 class="fs-5 fw-semibold lh-base mb-0">João da Silva</h4>
-                      <div class="text-muted-2 fw-medium"><span>Desenvolvedor Full Stack</span></div>
-                    </div>
-                  </div>
-                </div>
-                <div class="dashboard-inner">
-      
-                  <ul data-submenu-title="Navegação">
-                   
-                    <li><a href="candidate-dashboard.html"><i class="fa-solid fa-gauge-high me-2"></i>Painel do Candidato</a></li>
-                    
-                    <li class="active" id="painel-financeiro" role="button" >
-                        <a href="#" role="button"><i class="fi fi-rr-donate me-2" role="button"></i>Financeiro</a>
-                        <ul id="submenu-painel-financeiro" class="submenu" style="display: none; margin: 0 !important;background-color: #ece7fa; padding-left: 10px !important;">
-                            <li><a href="painel-financeiro.html"><i class="fi fi-rr-chart-histogram me-2"></i>Painel Financeiro</a></li>
-                            <li><a href="carteira.html"><i class="fi fi-rr-wallet me-2"></i>Carteira</a></li>
-                            <li><a href="saque.html"><i class="fi fi-rr-money-bill-wave-alt me-2"></i>Saque</a></li>
-                            <li><a href="contas-bancarias.html"><i class="fi fi-rs-bank me-2"></i>Contas Bancárias</a></li>
-                            <li style="background-color: #7447E1;"><a href="historico-transacoes.html"><i style="color: #ffffff;" class="fi fi-rr-exchange me-2"></i><strong style="color: #ffffff;">Histórico de Transações</strong></a></li>
-                            <li><a href="historico-pagamentos.html"><i class="fi fi-rs-receipt me-2"></i>Histórico de Pagamentos</a></li>
-                        </ul>
-                    </li>
-
-                    <li><a href="candidate-profile.html"><i class="fa-regular fa-user me-2"></i>Meu Perfil </a></li>
-                    <li><a href="candidate-resume.html"><i class="fa-solid fa-file-pdf me-2"></i>Meus Currículos</a></li>
-                    <li><a href="candidate-applied-jobs.html"><i class="fa-regular fa-paper-plane me-2"></i>Trabalhos Aplicados</a></li>
-                    <li><a href="candidate-alert-job.html"><i class="fa-solid fa-bell me-2"></i>Alertas de Trabalhos<span class="count-tag bg-success">4</span></a></li>
-                    <li><a href="candidate-saved-jobs.html"><i class="fa-solid fa-bookmark me-2"></i>Trabalhos Salvos</a></li>
-                    <li><a href="candidate-messages.html"><i class="fa-solid fa-comments me-2"></i>Mensagens<span class="count-tag bg-purple">4</span></a></li>
-                    <li><a href="candidate-change-password.html"><i class="fa-solid fa-unlock-keyhole me-2"></i>Alterar Senha</a></li>
-                    <li><a href="candidate-delete-account.html"><i class="fa-solid fa-trash-can me-2"></i>Deletar Conta</a></li>
-                    <li><a href="index.html"><i class="fa-solid fa-power-off me-2"></i>Sair</a></li>
-                  </ul>
-                </div>			
-              
-              </div>
-            </div>
-      
-            <div class="dashboard-content">
-      
-              <div class="dashboard-tlbar d-block mb-4">
-                <div class="row">
-                  <div class="colxl-12 col-lg-12 col-md-12">
-                    <h1 class="mb-1 fs-3 fw-medium">Histórico de Transações</h1>
-                    <nav aria-label="breadcrumb">
-                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item text-muted"><a href="candidate-dashboard.html">Candidato</a></li>
-                        <li class="breadcrumb-item"><a href="painel-financeiro.html">Financeiro</a></li>
-                        <li class="breadcrumb-item"><a href="historico-transacoes" style="color: #7447E1;">Histórico de Transações</a></li>
-                      </ol>
-                    </nav>
-                  </div>
-                </div>
-              </div>
-      
-              <div class="dashboard-widg-bar d-block">
-                <div class="col-xxl-12 col-xl-12 col-lg-12">
-                    <div class="card">
-                      <div class="card-header">
-                        <h4 class="card-title">Histórico de Transações</h4>
-                      </div>
-                      <div class="card-body">
-                        <div class="transaction-table">
-                          <div class="table-responsive">
-                            <table class="table mb-0 table-responsive-sm">
-                              <thead>
-                                <tr>
-                                  <th class="th_tipo">Tipo</th>
-                                  <th>Data e Hora</th>
-                                  <th>Descrição</th>
-                                  <th>Quantia</th>
-                                  <th>Situação</th>
-                                </tr>
-                              </thead>
-                              <tbody>
     
-                                <tr>
-                                  <td><span class="table-category-icon"><i class="bg-success fi fi-rr-arrow-trend-up"></i>Pagamento</span></td>
-                                  <td>05/02/2024 18:05</td>
-                                  <td>USJT - Designer UI/UX</td>
-                                  <td>+450,00</td>
-                                  <td> <span style="font-size: 12px; background: #fff; padding: 2px 10px; border-radius: 16px; display: inline-block;" class="text-white bg-warning">Pendente</span></td>
-                                </tr>
-    
-                                <tr>
-                                  <td><span class="table-category-icon"><i class="bg-danger fi fi-rr-arrow-trend-down"></i>Saque</span></td>
-                                  <td> 18/01/2024 14:37</td>
-                                  <td>Saque da Conta</td>
-                                  <td>-955,00</td>
-                                  <td> <span style="font-size: 12px; background: #fff; padding: 2px 10px; border-radius: 16px; display: inline-block;" class="text-white bg-success">Concluído</span></td>
-                                </tr>
-    
-                                <tr>
-                                  <td><span class="table-category-icon"><i class="bg-danger fi fi-rr-arrow-trend-down"></i>Saque</span></td>
-                                  <td>11/01/2024 12:20</td>
-                                  <td>Saque da Conta</td>
-                                  <td>-370,00</td>
-                                  <td> <span style="font-size: 12px; background: #fff; padding: 2px 10px; border-radius: 16px; display: inline-block;" class="text-white bg-success">Concluído</span></td>
-                                </tr>
-                                
-                                <tr>
-                                  <td><span class="table-category-icon"><i class="bg-success fi fi-rr-arrow-trend-up"></i>Pagamento</span></td>
-                                  <td>05/01/2024 18:10</td>
-                                  <td>USJT - Designer UI/UX</td>
-                                  <td>+450,00</td>
-                                  <td> <span style="font-size: 12px; background: #fff; padding: 2px 10px; border-radius: 16px; display: inline-block;" class="text-white bg-success">Concluído</span></td>
-                                </tr>
-    
-                                <tr>
-                                  <td><span class="table-category-icon"><i class="bg-danger fi fi-rr-arrow-trend-down"></i>SAQUE</span></td>
-                                  <td>01/01/2024 13:55</td>
-                                  <td>Saque da Conta</td>
-                                  <td>-450,00</td>
-                                  <td> <span style="font-size: 12px; background: #fff; padding: 2px 10px; border-radius: 16px; display: inline-block;" class="text-white bg-success">Concluído</span></td>
-                                </tr>
-    
-                                <tr>
-                                  <td><span class="table-category-icon"><i class="bg-success fi fi-rr-arrow-trend-up"></i>Pagamento</span></td>
-                                  <td>05/12/2023 18:00</td>
-                                  <td>USJT - Designer UI/UX</td>
-                                  <td>+450,00</td>
-                                  <td> <span style="font-size: 12px; background: #fff; padding: 2px 10px; border-radius: 16px; display: inline-block;" class="text-white bg-danger">Cancelado</span></td>
-                                </tr>
-    
-                              </tbody>
-                            </table>
-                          </div>
+             <div class="collapse" id="MobNav">
+                <div class="dashboard-nav">
+                    <div class="dash-user-blocks pt-5 px-3">
+                        <div class="jbs-grid-usrs-thumb">
+                            <div class="jbs-grid-yuo full-width">
+                                <figure class="w-25 h-25 circle overflow-hidden mx-auto"><img src="assets/img/team-1.jpg" class="img-fluid circle" alt=""></figure>
+                            </div>
                         </div>
-                      </div>
+                        <div class="jbs-grid-usrs-caption mb-3">
+                            <div class="jbs-tiosk text-center">
+                                <h4 class="fs-5 fw-semibold lh-base mb-0">João da Silva</h4>
+                                <div class="text-muted-2 fw-medium"><span>Desenvolvedor Full Stack</span></div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
-              </div>
-              
-              <!-- footer -->
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="py-3 text-center">Copyrights ©2024 Academic Leap Hub. Todos direitos reservados.</div>
+                    <div class="dashboard-inner">
+                        <ul data-submenu-title="Navegação">
+                            
+                            <li class="active"><a href="candidate-dashboard.html"><i class="fa-solid fa-gauge-high me-2"></i>Painel do Candidato</a></li>
+                            
+                            <li id="painel-financeiro" role="button" >
+                                <a href="#" role="button"><i class="fi fi-rr-donate me-2" role="button"></i>Financeiro</a>
+                                <ul id="submenu-painel-financeiro" class="submenu" style="display: none; margin: 0 !important;background-color: #ece7fa; padding-left: 10px !important;">
+                                    <li><a href="painel-financas.html"><i class="fi fi-rr-chart-histogram me-2"></i>Painel Financeiro</a></li>
+                                    <li><a href="carteira.html"><i class="fi fi-rr-wallet me-2"></i>Carteira</a></li>
+                                    <li><a href="saque.html"><i class="fi fi-rr-money-bill-wave-alt me-2"></i>Saque</a></li>
+                                    <li><a href="contas-bancarias.html"><i class="fi fi-rs-bank me-2"></i>Contas</a></li>
+                                    <li><a href="historico-transacoes.html"><i class="fi fi-rr-exchange me-2"></i>Histórico de Transações</a></li>
+                                    <li><a href="historico-pagamentos.html"><i class="fi fi-rs-receipt me-2"></i>Histórico de Pagamentos</a></li>
+                                </ul>
+                            </li>
+    
+                            <li><a href="candidate-profile.html"><i class="fa-regular fa-user me-2"></i>Meu Perfil </a></li>
+                            <li><a href="candidate-resume.html"><i class="fa-solid fa-file-pdf me-2"></i>Meus Currículos</a></li>
+                            <li><a href="candidate-applied-jobs.html"><i class="fa-regular fa-paper-plane me-2"></i>Trabalhos Aplicados</a></li>
+                            <li><a href="candidate-alert-job.html"><i class="fa-solid fa-bell me-2"></i>Alertas de Trabalhos<span class="count-tag bg-success">4</span></a></li>
+                            <li><a href="candidate-saved-jobs.html"><i class="fa-solid fa-bookmark me-2"></i>Trabalhos Salvos</a></li>
+                            <li><a href="candidate-messages.html"><i class="fa-solid fa-comments me-2"></i>Mensagens<span class="count-tag bg-purple">4</span></a></li>
+                            <li><a href="candidate-change-password.html"><i class="fa-solid fa-unlock-keyhole me-2"></i>Alterar Senha</a></li>
+                            <li><a href="candidate-delete-account.html"><i class="fa-solid fa-trash-can me-2"></i>Deletar Conta</a></li>
+                            <li><a href="index.html"><i class="fa-solid fa-power-off me-2"></i>Sair</a></li>
+                        </ul>
+                    </div>					
                 </div>
-              </div>
-      
-              </div>
-      
-          </div>
-      
-          <a id="back2Top" class="top-scroll" title="Voltar ao Topo" href="#"><i class="fa-solid fa-caret-up"></i></a>
+            </div>
+
+            <div class="dashboard-content">
+
+                <div class="dashboard-tlbar d-block mb-0">
+                    <div class="row">
+                        <div class="colxl-12 col-lg-12 col-md-12">
+                            <h1 class="mb-1 fs-3 fw-medium">Adicionar Conta Bancária</h1>
+                            <nav aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item text-muted"><a href="candidate-dashboard.html">Candidato</a></li>
+                                    <li class="breadcrumb-item text-muted"><a href="painel-financas.html">Financeiro</a></li>
+                                    <li class="breadcrumb-item text-muted"><a href="painel-financas.html">Contas Bancárias</a></li>
+                                    <li class="breadcrumb-item"><a href="add-bank.html" style="color: #7447E1;">Adicionar Conta Bancária</a></li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center h-100 align-items-center">
+                   
+                    <div class="col-xl-12 col-md-12">
+                        <div class="alert alert-warning mb-3 mt-0" role="alert" style="border: 1px solid #ffce3d;;"><p class=""><i class="fa fa-warning" style="color: #ffbf00;"></i> ATENÇÃO: a conta bancária deve estar registrada sob o mesmo CPF utilizado no seu cadastro.  Para contas poupança, só damos suporte a Banco do Brasil, Bradesco, Caixa Econômica Federal, Itaú e Santander.</p></div>
+
+                        <div class="card">
+
+                            <div class="card-header">
+                                <h4 class="card-title">Adcionar Conta Bancária</h4>
+                            </div>
+
+                            <div class="card-body">
+                                <form action="bank-add-successful">
+                                    <div class="form-row">
+                                        <div class="mb-3 col-xl-12">
+                                            <label class="mr-sm-2">Número do CPF</label>
+                                            <input placeholder="123.456.789-00" disabled="disabled" style="height: 56px; font-size: 15px; box-shadow: none;  border: 1px solid #dadfe6; background-clip: initial; border-radius: 5px; padding: 0 22px; color: #0f172a; background: #e5e7eb; display: block; width: 100%; font-weight: 400; line-height: 1.6;     appearance: none;"/>
+                                        </div>
+
+                                        <div class="mb-3 col-xl-12">
+                                            <label class="mr-sm-2">Nome Completo</label>
+                                            <input class="form-control"/>
+                                        </div>
+
+                                        <div class="mb-3 col-xl-12">
+                                            <label class="mr-sm-2">Nome do Banco</label>
+                                            <input class="form-control" />
+                                        </div>
+
+                                        <div class="mb-3 col-xl-12">
+                                            <label class="mr-sm-2">Número da Agência</label>
+                                            <input class="form-control" />
+                                        </div>
+
+                                        <div class="mb-3 col-xl-12">
+                                            <label class="mr-sm-2">Número da Conta com último caractere</label>
+                                            <input class="form-control" />
+                                        </div>
+
+                                        <div class="mb-3 col-xl-12">
+                                            <label class="mr-sm-2">Tipo da Conta</label>
+                                            <select class="form-control">
+                                                <option value="">Selecionar...</option>
+                                                <option value="1">Conta Corrente</option>
+                                                <option value="2">Conta Poupança</option>
+                                      
+                                            </select> 
+                                        </div>
+
+                                        <div class="mb-3 col-xl-12">
+                                            <input type="checkbox"  /> Definir como conta bancária padrão
+                                        </div>
+
+                                        <div class="col-12 mt-5">
+                                            <div class="row">
+                                                <div class="col-6"><a class="btn btn-primary w-100" href="contas-bancarias.html">Cancelar</a></div>
+                                                <div class="col-6"><a class="btn btn-success  w-100">Salvar</a></div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
 
 
-    </div><!--/$-->
-
-      <!-- ============================================================== -->
+    </div>
+  
+    <!-- ============================================================== -->
 	<!-- All Jquery -->
 	<!-- ============================================================== -->
-  
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/popper.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
@@ -468,41 +449,43 @@
 	<script src="assets/js/owl.carousel.min.js"></script>
 
 	<script src="assets/js/custom.js"></script>
+	
+	<!-- Morris.js charts -->
+	<script src="assets/js/raphael/raphael.min.js"></script>
+	<script src="assets/js/morris.js/morris.min.js"></script>
+	<!-- Custom Chart JavaScript -->
+	<script src="assets/js/custom/dashboard.js"></script>
+	<!-- ============================================================== -->
+	<!-- This page plugins -->
+	<!-- ============================================================== -->
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const menuToggle = document.getElementById("painel-financeiro");
+			const submenu = document.getElementById("submenu-painel-financeiro");
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const menuToggle = document.getElementById("painel-financeiro");
-        const submenu = document.getElementById("submenu-painel-financeiro");
+			menuToggle.addEventListener("click", function(event) {
+				const isActive = this.classList.contains("active");
+				closeAllSubmenus();
+				if (!isActive) {
+					this.classList.add("active");
+					submenu.style.display = "block";
+				} else {
+					this.classList.remove("active");
+					submenu.style.display = "none";
+				}
+			});
 
-        menuToggle.addEventListener("click", function(event) {
-            const isActive = this.classList.contains("active");
-            closeAllSubmenus();
-            if (!isActive) {
-                this.classList.add("active");
-                submenu.style.display = "block";
-            } else {
-                this.classList.remove("active");
-                submenu.style.display = "none";
-            }
-        });
+		
 
-        menuToggle.addEventListener("mouseout", function(event) {
-            const hasActiveSubmenu = submenu.style.display === "block";
-            if (!hasActiveSubmenu) {
-                this.classList.add("active");
-            }
-        });
-
-        function closeAllSubmenus() {
-            const allActiveMenus = document.querySelectorAll(".dashboard-nav > li.active");
-            allActiveMenus.forEach(function(activeMenu) {
-                activeMenu.classList.add("active");
-                activeMenu.querySelector(".submenu").style.display = "none";
-            });
-        }
-    });
-  </script>
-
+			function closeAllSubmenus() {
+				const allActiveMenus = document.querySelectorAll(".dashboard-nav > li.active");
+				allActiveMenus.forEach(function(activeMenu) {
+					activeMenu.classList.add("active");
+					activeMenu.querySelector(".submenu").style.display = "none";
+				});
+			}
+		});
+	</script>
 </body>
 
 </html>

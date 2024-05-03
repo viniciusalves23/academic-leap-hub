@@ -5,7 +5,7 @@
     <meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Academic Leap Hub | Encontre seu Trabalho dos Sonhos</title>
-  <link rel="icon" type="image/x-icon" href="assets/img/favicon (4).png">
+     <link rel="icon" type="image/x-icon" href="assets/img/favicon (4).png">
 
   <!-- All Plugins -->
 	<link href="assets/css/animation.css" rel="stylesheet">
@@ -315,16 +315,17 @@
                     
                     <li><a href="candidate-dashboard.html"><i class="fa-solid fa-gauge-high me-2"></i>Painel do Candidato</a></li>
 						
-					<li id="painel-financeiro" class="active" role="button" >
-							<a href="#" role="button"><i class="fi fi-rr-donate me-2" role="button"></i>Financeiro</a>
-							<ul id="submenu-painel-financeiro" class="submenu" style="display: none; margin: 0 !important;background-color: #ece7fa; padding-left: 10px !important;">
-								<li><a href="painel-financas.html"><i class="fi fi-rr-chart-histogram me-2"></i>Painel Financeiro</a></li>
-                                <li style="background-color: #7447E1;"><a href="carteira.html"><i style="color: #ffffff;" class="fi fi-rr-wallet me-2"></i><strong style="color: #ffffff;">Carteira</strong></a></li>
-								<li><a href="saque.html"><i class="fi fi-rr-money-bill-wave-alt me-2"></i>Saque</a></li>
-								<li><a href="historico-transacoes.html"><i class="fi fi-rr-exchange me-2"></i>Histórico de Transações</a></li>
-								<li><a href="historico-pagamentos.html"><i class="fi fi-rs-receipt me-2"></i>Histórico de Pagamentos</a></li>
-							</ul>
-					</li>
+					<li class="active" id="painel-financeiro" role="button" >
+                        <a href="#" role="button"><i class="fi fi-rr-donate me-2" role="button"></i>Financeiro</a>
+                        <ul id="submenu-painel-financeiro" class="submenu" style="display: none; margin: 0 !important;background-color: #ece7fa; padding-left: 10px !important;">
+                            <li><a href="painel-financeiro.html"><i class="fi fi-rr-chart-histogram me-2"></i>Painel Financeiro</a></li>
+                            <li style="background-color: #7447E1;"><a href="carteira.html"><i style="color: #ffffff;" class="fi fi-rr-wallet me-2"></i><strong style="color: #ffffff;">Carteira</strong></a></li>
+                            <li><a href="saque.html"><i class="fi fi-rr-money-bill-wave-alt me-2"></i>Saque</a></li>
+                            <li><a href="contas-bancarias.html"><i class="fi fi-rs-bank me-2"></i>Contas Bancárias</a></li>
+                            <li><a href="historico-transacoes.html"><i class="fi fi-rr-exchange me-2"></i>Histórico de Transações</a></li>
+                            <li><a href="historico-pagamentos.html"><i class="fi fi-rs-receipt me-2"></i>Histórico de Pagamentos</a></li>
+                        </ul>
+                    </li>
 
                     <li><a href="candidate-profile.html"><i class="fa-regular fa-user me-2"></i>Meu Perfil </a></li>
                     <li><a href="candidate-resume.html"><i class="fa-solid fa-file-pdf me-2"></i>Meus Currículos</a></li>
@@ -350,8 +351,8 @@
                     <nav aria-label="breadcrumb">
                       <ol class="breadcrumb">
                         <li class="breadcrumb-item text-muted"><a href="candidate-dashboard.html">Candidato</a></li>
-                        <li class="breadcrumb-item"><a href="candidate-dashboard.html">Painel Financeiro</a></li>
-                        <li class="breadcrumb-item"><a href="candidate-dashboard.html" style="color: #7447E1;">Carteira</a></li>
+                        <li class="breadcrumb-item"><a href="painel-financeiro.html">Financeiro</a></li>
+                        <li class="breadcrumb-item"><a href="carteira.html" style="color: #7447E1;">Carteira</a></li>
                       </ol>
                     </nav>
                   </div>
@@ -396,7 +397,7 @@
 
                             <!-- CARD ADCIONAR CONTA BANCARIA -->
                             <div class="add-card-link">
-                                <h5 class="mb-0">Adicionar Conta Bancária</h5><a href="/add-new-account"><i
+                                <h5 class="mb-0">Adicionar Conta Bancária</h5><a href="contas-bancarias.html"><i
                                         class="fi fi-rr-square-plus"></i></a>
                             </div>
 
@@ -493,7 +494,7 @@
                                                     <table class="table mb-0 table-responsive-sm">
                                                       <thead>
                                                         <tr>
-                                                          <th>Tipo</th>
+                                                          <th class="th_tipo">Tipo</th>
                                                           <th>Data e Hora</th>
                                                           <th>Descrição</th>
                                                           <th>Quantia</th>
@@ -620,7 +621,7 @@
                                                     <table class="table mb-0 table-responsive-sm">
                                                       <thead>
                                                         <tr>
-                                                          <th>Tipo</th>
+                                                          <th class="th_tipo">Tipo</th>
                                                           <th>Descrição</th>
                                                           <th>Quantia</th>
                                                           <th>Situação</th>
