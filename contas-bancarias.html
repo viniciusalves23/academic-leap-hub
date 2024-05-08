@@ -438,7 +438,7 @@
 
                     <div class="card-header d-flex mb-0">
                         <h4 class="card-title">Adcionar Conta Bancária</h4>
-                        <button class="fa fa-close btn_cancelar" style="background-color: transparent; color: #000; border: none; font-size: 20px;"></button>
+                        <button class="fa fa-close" style="background-color: transparent; color: #000; border: none; font-size: 20px;"></button>
                     </div>
 
                     <div class="card-body" style="padding-top: 0;">
@@ -489,7 +489,7 @@
 
                                 <div class="col-12 mt-1">
                                     <div class="row">
-                                        <div class="col-6"><a class="btn btn-primary w-100 btn_cancelar">Cancelar</a></div>
+                                        <div class="col-6"><a class="btn btn-primary w-100" id="btn_cancelar_conta" >Cancelar</a></div>
                                         <div class="col-6"><a class="btn btn-success  w-100 btn_salvar">Salvar</a></div>
                                     </div>
                                 </div>
@@ -799,11 +799,12 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            
             document.querySelector('.btn_adicionar_conta').addEventListener('click', function() {
                 document.getElementById('modal-adicionar-conta').classList.remove('d-none');
             });
 
-            document.querySelector('.btn_cancelar').addEventListener('click', function() {
+            document.querySelector('#btn_cancelar_conta').addEventListener('click', function() {
                 resetModal();
                 document.getElementById('modal-adicionar-conta').classList.add('d-none');
                 document.querySelector('.input_checkbox_modal_acidionar_conta').checked = false;
