@@ -23,6 +23,8 @@
 	<link href="assets/css/bootstrap-icons.css" rel="stylesheet">
 
 	<!-- Custom CSS -->
+	<link rel="stylesheet" href="/assets/css/painel-finanças/style.css" />
+  <link rel="stylesheet" href="/assets/css/painel-finanças/style2.css" />
 	<link href="assets/css/style.css" rel="stylesheet">
 </head>
 
@@ -334,13 +336,25 @@
 				<div class="dashboard-inner">
 					<ul data-submenu-title="Navegação">
 						<li><a href="employer-dashboard.html"><i class="fa-solid fa-gauge-high me-2"></i>Painel do Empregador</a></li>
+						<li id="painel-financeiro" role="button" >
+							<a  role="button"><i class="fi fi-rr-donate me-2" role="button"></i>Financeiro</a>
+							<ul id="submenu-painel-financeiro" class="submenu" style="display: none; margin: 0 !important;background-color: #ece7fa; padding-left: 10px !important;">
+								<li><a href="painel-financeiro-empresa.html"><i class="fi fi-rr-chart-histogram me-2"></i>Painel Financeiro</a></li>
+								<li><a href="carteira-empresa.html"><i class="fi fi-rr-wallet me-2"></i>Carteira</a></li>
+								<li><a href="saque-empresa.html"><i class="fi fi-rr-money-bill-wave-alt me-2"></i>Saque</a></li>
+								<li><a href="deposito-empresa.html"><i class="fi fi-rr-donate me-2"></i>Depósito</a></li>
+								<li><a href="contas-bancarias-empresa.html"><i class="fi fi-rs-bank me-2"></i>Contas Bancárias</a></li>
+								<li><a href="historico-transacoes-empresa.html"><i class="fi fi-rr-exchange me-2"></i>Histórico de Transações</a></li>
+								<li><a href="historico-pagamentos-empresa.html"><i class="fi fi-rs-receipt me-2"></i>Histórico de Pagamentos</a></li>
+							</ul>
+						</li>
 						<li><a href="employer-profile.html"><i class="fa-regular fa-user me-2"></i>Meu Perfil</a></li>
 						<li><a href="saved-candidates.html"><i class="fa-regular fa-bookmark me-2"></i>Candidatos Salvos</a></li>
 						<li><a href="employer-manage-jobs.html"><i class="fa-solid fa-briefcase me-2"></i>Gerenciar Trabalhos<span class="count-tag bg-success">4</span></a></li>
 						<li><a href="submit-job.html"><i class="fa-solid fa-circle-plus me-2"></i>Enviar Trabalho</a></li>
 						<li class="active"><a href="employer-manage-companies.html"><i class="fa-solid fa-building me-2"></i>Gerenciar Empresas<span class="count-tag bg-purple">4</span></a></li>
 						<li><a href="add-company.html"><i class="fa-regular fa-square-plus me-2"></i>Adicionar Empresa</a></li>
-						<li><a href="employer-messages.html"><i class="fa-solid fa-comments me-2"></i>Mensagens</a></li>
+						<li><a href="chat-empresa.html"><i class="fa-solid fa-comments me-2"></i>Mensagens</a></li>
 						<li><a href="employer-change-password.html"><i class="fa-solid fa-unlock-keyhole me-2"></i>Alterar Senha</a></li>
 						<li><a href="employer-delete-account.html"><i class="fa-solid fa-trash-can me-2"></i>Deletar Conta</a></li>
 						<li><a href="index.html"><i class="fa-solid fa-power-off me-2"></i>Sair</a></li>
@@ -581,7 +595,39 @@
 	<!-- ============================================================== -->
 	<!-- This page plugins -->
 	<!-- ============================================================== -->
-
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+			const menuToggle = document.getElementById("painel-financeiro");
+			const submenu = document.getElementById("submenu-painel-financeiro");
+	
+			menuToggle.addEventListener("click", function(event) {
+				const isActive = this.classList.contains("active");
+				closeAllSubmenus();
+				if (!isActive) {
+					this.classList.add("active");
+					submenu.style.display = "block";
+				} else {
+					this.classList.remove("active");
+					submenu.style.display = "none";
+				}
+			});
+	
+			menuToggle.addEventListener("mouseout", function(event) {
+				const hasActiveSubmenu = submenu.style.display === "block";
+				if (!hasActiveSubmenu) {
+					this.classList.add("active");
+				}
+			});
+	
+			function closeAllSubmenus() {
+				const allActiveMenus = document.querySelectorAll(".dashboard-nav > li.active");
+				allActiveMenus.forEach(function(activeMenu) {
+					activeMenu.classList.add("active");
+					activeMenu.querySelector(".submenu").style.display = "none";
+				});
+			}
+		});
+		</script>
 </body>
 
 </html>
