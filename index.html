@@ -23,6 +23,8 @@
 	<link href="assets/css/bootstrap-icons.css" rel="stylesheet">
 
 	<!-- Custom CSS -->
+	<link href="assets/css/style2.css" rel="stylesheet">
+
 	<link href="assets/css/style.css" rel="stylesheet">
 </head>
 
@@ -40,8 +42,7 @@
 						<div class="mobile_nav">
 							<ul>
 								<li>
-									<a  data-bs-toggle="modal" data-bs-target="#login" class="bg-primary-2 rounded-pill text-light"><i class="fa-solid fa-right-to-bracket me-1"></i>Login</a>
-								</li>
+									<a href="login.html" class="bg-primary-2 rounded-pill text-light"><i class="fa-solid fa-right-to-bracket me-1"></i>Login</a>								</li>
 							</ul>
 						</div>
 					</div>
@@ -466,7 +467,7 @@
 				<div class="row justify-content-center gy-4 gx-3 mb-5">
 
 					<!-- Single Item -->
-					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12" role="button" onclick="mostrarModalCandidatoJoao()">
 						<a  class="candidateCard card h-100 rounded-3">
 							<div class="card-body position-relative">
 								<div class="position-absolute end-0 top-0 mt-3 me-3"><span class="text-primary fs-5"
@@ -498,7 +499,7 @@
 					</div>
 
 					<!-- Single Item -->
-					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12" role="button" onclick="mostrarModalCandidatoAline()">
 						<a  class="candidateCard card h-100 rounded-3">
 							<div class="card-body position-relative">
 								<div class="position-absolute end-0 top-0 mt-3 me-3"><span class="text-primary fs-5"
@@ -513,7 +514,7 @@
 										<div class="d-flex align-items-center justify-content-center"><span
 												class="rounded-pill fw-medium text-sm bg-purple text-light py-1 px-3">Redatora</span></div>
 										<h5 class="mb-0 fs-5 lh-base">Aline Santos</h5>
-										<p class="mb-0 text-md text-muted fw-medium"><i class="fa-solid fa-location-dot me-2"></i>Curitiba, PR</p>
+										<p class="mb-0 text-md text-muted fw-medium"><i class="fa-solid fa-location-dot me-2"></i>Recife, PE</p>
 									</div>
 								</div>
 								<div class="candidateCard-bottom mt-4 mb-3">
@@ -530,7 +531,7 @@
 					</div>
 
 					<!-- Single Item -->
-					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12" role="button" onclick="mostrarModalCandidatoEdson()">
 						<a  class="candidateCard card h-100 rounded-3">
 							<div class="card-body position-relative">
 								<div class="position-absolute end-0 top-0 mt-3 me-3"><span class="text-primary fs-5"
@@ -562,7 +563,7 @@
 					</div>
 
 					<!-- Single Item -->
-					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12" role="button" onclick="mostrarModalCandidatoAmanda()">
 						<a  class="candidateCard card h-100 rounded-3">
 							<div class="card-body position-relative">
 								<div class="position-absolute end-0 top-0 mt-3 me-3"><span class="text-primary fs-5"
@@ -577,7 +578,7 @@
 										<div class="d-flex align-items-center justify-content-center"><span
 												class="rounded-pill fw-medium text-sm bg-info text-light py-1 px-3">Analista Mkt. Digital</span></div>
 										<h5 class="mb-0 fs-5 lh-base">Amanda Santos</h5>
-										<p class="mb-0 text-md text-muted fw-medium"><i class="fa-solid fa-location-dot me-2"></i>Recife, PE</p>
+										<p class="mb-0 text-md text-muted fw-medium"><i class="fa-solid fa-location-dot me-2"></i>Curitiba, PR</p>
 									</div>
 								</div>
 								<div class="candidateCard-bottom mt-4 mb-3">
@@ -1152,76 +1153,6 @@
 			</div>
 			
 		</footer>
-
-		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="loginmodal" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered login-pop-form" role="document">
-				<div class="modal-content" id="loginmodal">
-					<div class="modal-header">
-						<h4 class="modal-title fs-6">Sign In / Register</h4>
-						<a  class="text-muted fs-4" data-bs-dismiss="modal" aria-label="Close"><i
-								class="fa-solid fa-square-xmark"></i></a>
-					</div>
-					<div class="modal-body">
-						<div class="modal-login-form py-2 px-md-3 px-0">
-							<form>
-
-								<div class="social-login">
-									<div class="d-flex align-items-center justify-content-center flex-wrap gap-3 p-0">
-										<div class="flex-first mob-100">
-											<a  class="btn bg-white border border-2 text-dark full-width">
-												<i class="fa-brands fa-google-plus-g color--googleplus me-2"></i>
-												<span class="fw-medium text-md">Signin with Google</span>
-											</a>
-										</div>
-										<div class="flex-last mob-100">
-											<a  class="btn bg-white border border-2 text-dark full-width">
-												<i class="fa-brands fa-facebook color--facebook me-2"></i>
-												<span class="fw-medium text-md">Login with Facebook</span>
-											</a>
-										</div>
-									</div>
-								</div>
-
-								<div class="prixer my-5">
-									<div class="devider-wraps position-relative">
-										<div class="devider-text text-muted-2 text-md">Or signin with email</div>
-									</div>
-								</div>
-
-								<div class="form-floating mb-4">
-									<input type="email" class="form-control" placeholder="name@example.com">
-									<label>User Name</label>
-								</div>
-								<div class="form-floating mb-4">
-									<input type="password" class="form-control" placeholder="Password">
-									<label>Password</label>
-								</div>
-
-								<div class="form-group">
-									<button type="submit" class="btn btn-primary full-width font--bold btn-lg">Log In</button>
-								</div>
-
-								<div class="modal-flex-item d-flex align-items-center justify-content-between">
-									<div class="modal-flex-first">
-										<div class="form-check form-check-inline">
-											<input class="form-check-input" type="checkbox" id="savepassword" value="option1">
-											<label class="form-check-label" for="savepassword">Save Password</label>
-										</div>
-									</div>
-									<div class="modal-flex-last">
-										<a href="JavaScript:Void(0);" class="text-primary fw-medium">Forget Password?</a>
-									</div>
-								</div>
-							</form>
-						</div>
-
-					</div>
-					<div class="modal-footer align-items-center justify-content-center">
-						<p>Don't have an account yet?<a href="register.html" class="text-primary fw-medium ms-1">Sign Up</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
 
 		<a id="back2Top" class="top-scroll" title="Back to top" ><i class="fa-solid fa-caret-up"></i></a>
 
@@ -2074,6 +2005,1184 @@
 		</div>
 	</div>
 
+
+	<!-- MODAIS CANDIDATOS -->
+	<div id="modalCandidatoJoao" class="modal d-none" style="position: fixed;top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(150, 130, 130, 0.5); z-index: 99999;  display: block; align-items: center;justify-content: center;">
+		<div class="row">
+			<div class="col-xl-12 col-lg-12 col-md-12">
+				<div class="card">
+					<div class="card-body">
+
+						<div class="col-xl-12 col-lg-12 col-md-12">
+
+							<section  style="background-color: #ece7fa;">
+								<button type="button" aria-label="Fechar" id="fecharModalCandidatoJoao" style="background-color: #7447E1; color: #ffffff; border: 1px solid #ffffff; position: absolute; top: 0; right: 0; margin-right: 5px; margin-top: 5px;"><i class="fa-solid fa-close"></i></button>
+
+								<div class="container">
+
+									<div class="row">
+										<div class="col-xl-12 col-lg-12 col-md-12">
+
+											<div class="cndt-head-block">
+
+												<div class="cndt-head-left">
+													
+													<div class="cndt-head-thumb">
+														<figure><img src="assets/img/team-1.jpg" class="img-fluid circle" alt="" style="border: 5px solid #FFD700;"></figure>
+													</div>
+													<div class="cndt-head-caption">
+														<div class="cndt-head-caption-top">
+															<div class="cndt-yior-1"><span class="label text-sm-muted" style="background-color: #FFD700; color: #000;"><strong>Nível Ouro</strong></span></div>
+															<div class="cndt-yior-2" ><h4 class="cndt-title">João da Silva</h4></div>
+															<div class="cndt-yior-3">
+																<span><i class="fa-solid fa-user-graduate me-1"></i>Desenvolvedor Full Stack</span>
+																<span><i class="fa-solid fa-location-dot me-1"></i>São Paulo, SP
+																</span>
+																<span><i class="fa-solid fa-briefcase me-1"></i>Universidade São Judas Tadeu</span>
+															</div>
+														</div>
+														<div class="cndt-head-caption-bottom">
+															<div class="cndt-yior-skills">
+																<span style="background-color: #7447E1; color: #ffffff;">C#</span>
+																<span style="background-color: #7447E1; color: #ffffff;">SQL</span>
+																<span style="background-color: #7447E1; color: #ffffff;">Javascript</span>
+																<span style="background-color: #7447E1; color: #ffffff;">GitHub</span>
+																<span style="background-color: #7447E1; color: #ffffff;">.NET MVC</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="cndt-head-right">
+													<button type="button" class="btn btn-primary" title="Fazer Download Currículo">Download CV<i class="fa-solid fa-download ms-2"></i></button>
+													<button type="button" class="btn btn-outline-primary ms-2" title="Salvar Candidato(a)"><i class="fa-solid fa-bookmark"></i></button>
+												</div>
+											
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							
+							<section>
+								<div class="container">
+									<!-- row Start -->
+									<div class="row">
+				
+										<div class="col-xl-8 col-lg-8 col-md-12">
+											<div class="cdtsr-groups-block">
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Sobre</h5></div>
+													<div class="single-cdtsr-body">
+														<p>Desenvolvedor de Software Full Stack | Apaixonado por Aplicações Web. 👨‍💻 Com mais de 1 ano de experiência em desenvolvimento de software, sou especializado em aplicações web utilizando tecnologias como .NET MVC, C#, SQL, HTML, CSS, JavaScript, Git e GitHub.</p>
+														<p>Também tenho conhecimento em Azure DevOps para integração contínua e entrega de software. 🌐 Sempre em busca de desafios e aprendizado contínuo, estou comprometido em criar soluções eficientes e escaláveis para problemas complexos.</p>
+													</div>
+												</div>
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Informações</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="row align-items-center justify-content-between gy-4">
+
+															<div class="col-xl-6 col-lg-6 col-md-6">
+																<div class="cdtx-infr-box">
+																	<div class="cdtx-infr-icon"><i class="fa-regular fa-user"></i></div>
+																	<div class="cdtx-infr-captions">
+																		<h5>Masculino</h5>
+																		<p>Gênero</p>
+																	</div>
+																</div>
+															</div>
+															<div class="col-xl-6 col-lg-6 col-md-6">
+																<div class="cdtx-infr-box">
+																	<div class="cdtx-infr-icon"><i class="fa-solid fa-cake-candles"></i></div>
+																	<div class="cdtx-infr-captions">
+																		<h5>23 Fev 2001</h5>
+																		<p>Data de Nascimento</p>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col-xl-6 col-lg-6 col-md-6">
+																<div class="cdtx-infr-box">
+																	<div class="cdtx-infr-icon"><i class="fa-solid fa-briefcase"></i></div>
+																	<div class="cdtx-infr-captions">
+																		<h5>2 Anos</h5>
+																		<p>Experiência</p>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col-xl-6 col-lg-6 col-md-6">
+																<div class="cdtx-infr-box">
+																	<div class="cdtx-infr-icon"><i class="fa-solid fa-layer-group"></i></div>
+																	<div class="cdtx-infr-captions">
+																		<h5>Remoto, Hibrido</h5>
+																		<p>Tipo de Trabalho</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Curriculos</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="resumes-groups-blox">
+															
+															<div class="single-resumes-blocks">
+																<div class="single-resumes-left">
+																	<div class="single-resumes-icons"><i class="fa-solid fa-file-pdf"></i></div>
+																	<div class="single-resumes-captions"><h5>curriculo-2024.pdf<span>1 Mês Atrás</span></h5></div>
+																</div>
+																<div class="single-resumes-right">
+																	<button type="button" class="btn btn-md" style="background-color: #ece7fa; color: #7447E1;">Download<i class="fa-solid fa-circle-down ms-1"></i></button>
+																</div>
+															</div>
+															
+															<div class="single-resumes-blocks">
+																<div class="single-resumes-left">
+																	<div class="single-resumes-icons"><i class="fa-solid fa-file-word"></i></div>
+																	<div class="single-resumes-captions"><h5>curriculo-2022.docs<span>2 Anos Atrás</span></h5></div>
+																</div>
+																<div class="single-resumes-right">
+																	<button type="button" class="btn btn-md" style="background-color: #ece7fa; color: #7447E1;">Download<i class="fa-solid fa-circle-down ms-1"></i></button>
+																</div>
+															</div>
+															
+														</div>
+													</div>
+												</div>
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Trabalhos Realizados</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="experinc-usr-groups">
+														
+															<div class="single-experinc-block">
+																<div class="single-experinc-lft">
+																	<div class="experinc-thumbs"><figure><img src="assets/img/USJT.png" class="img-fluid" alt=""></figure></div>
+																</div>
+																<div class="single-experinc-rght">
+																	<div class="experinc-emp-title"><h5>Universidade São Judas Tadeu</h5><span class="label" style="background-color: #ff891c; color: #fff;">Remunerado</span></div>
+																	<div class="experinc-post-title">
+																		<h6>Designer UI/UX</h6>
+																		<div class="experinc-infos-list"><span class="exp-start">5 Meses</span><span class="work-exp-date">JAN 2024 - Atual</span></div>
+																	</div>
+																</div>
+															</div>
+														
+														</div>
+													</div>
+												</div>
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Formação</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="educations-usr-groups">
+														
+															<div class="single-educations-block">
+																<div class="single-educations-lft">
+																	<div class="educations-thumbs"><figure><img src="assets/img/USJT.png" class="img-fluid" alt=""></figure></div>
+																</div>
+																<div class="single-educations-rght">
+																	<div class="educations-emp-title"><h5>Universidade São Judas Tadeu</h5></div>
+																	<div class="educations-post-title">
+																		<h6>Graduação em Sistemas de Informação</h6>
+																	</div>
+																	<div class="educations-infos-list"><span class="exp-start">JUL 2020 - JUL 2024</span></div>
+																</div>
+															</div>					
+														
+														</div>
+													</div>
+												</div>
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Skills</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="cndts-all-skills-list">
+															<span style="background-color: #7447E1; color: #ffffff;">C#</span>
+															<span style="background-color: #7447E1; color: #ffffff;">SQL</span>
+															<span style="background-color: #7447E1; color: #ffffff;">Bootstrap</span>
+															<span style="background-color: #7447E1; color: #ffffff;">HTML5</span>
+															<span style="background-color: #7447E1; color: #ffffff;">UI/UX</span>
+															<span style="background-color: #7447E1; color: #ffffff;">Javascript</span>
+															<span style="background-color: #7447E1; color: #ffffff;">.NET MVC</span>
+														</div>
+													</div>
+												</div>
+												
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Idiomas</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="row gy-4">
+														
+															<div class="col-xl-4 col-lg-4 col-md-6 col-6">
+																<div class="cndts-lgs-blocks">
+																	<div class="cndts-lgs-ico" style="background-color: #ece7fa !important;"><h6 style="color: #7447E1;">ES</h6></div>
+																	<div class="cndts-lgs-captions">
+																		<h5>Espanhol</h5>
+																		<p>Básico</p>
+																	</div>
+																</div>
+															</div>
+															
+															<div class="col-xl-4 col-lg-4 col-md-6 col-6">
+																<div class="cndts-lgs-blocks">
+																	<div class="cndts-lgs-ico" style="background-color: #ece7fa !important;"><h6 style="color: #7447E1;">IN</h6></div>
+																	<div class="cndts-lgs-captions">
+																		<h5>Inglês</h5>
+																		<p>Intermediário</p>
+																	</div>
+																</div>
+															</div>
+															
+															<div class="col-xl-4 col-lg-4 col-md-6 col-6">
+																<div class="cndts-lgs-blocks">
+																	<div class="cndts-lgs-ico" style="background-color: #ece7fa !important;"><h6 style="color: #7447E1;">PT</h6></div>
+																	<div class="cndts-lgs-captions">
+																		<h5>Português</h5>
+																		<p>Nativo</p>
+																	</div>
+																</div>
+															</div>
+														
+														</div>
+													</div>
+												</div>										
+											
+											</div>
+										</div>
+										
+										<div class="col-xl-4 col-lg-4 col-md-12">
+											<div class="sidefr-usr-block mb-4">
+												<div class="sidefr-usr-header">
+													<h4 class="sidefr-usr-title">Entrar em Contato</h4>
+												</div>
+												<div class="sidefr-usr-body">
+													<form>
+														<div class="form-group m-0">
+															<button type="button" class="btn btn-primary fw-medium full-width">Enviar Mensagem</button>
+														</div>
+													</form>
+												</div>
+											</div>
+											
+											<div class="sidefr-usr-block">
+												<div class="cndts-share-block">
+													<div class="cndts-share-title">
+														<h5>Compartilhar Perfil</h5>
+													</div>
+													<div class="cndts-share-list">
+														<ul>
+															<li><a href="JavaScript:Void(0);"><i class="fa-brands fa-facebook-f"></i></a></li>
+															<li><a href="JavaScript:Void(0);"><i class="fa-brands fa-twitter"></i></a></li>
+															<li><a href="JavaScript:Void(0);"><i class="fa-brands fa-google-plus-g"></i></a></li>
+															<li><a href="JavaScript:Void(0);"><i class="fa-brands fa-instagram"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+										
+									</div>
+									<!-- /row -->					
+								</div>	
+							</section>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modalCandidatoAline" class="modal d-none" style="position: fixed;top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(150, 130, 130, 0.5); z-index: 99999;  display: block; align-items: center;justify-content: center;">
+		<div class="row">
+			<div class="col-xl-12 col-lg-12 col-md-12">
+				<div class="card">
+					<div class="card-body">
+
+						<div class="col-xl-12 col-lg-12 col-md-12">
+
+							<section  style="background-color: #ece7fa;">
+								<button type="button" aria-label="Fechar" id="fecharModalCandidatoAline" style="background-color: #7447E1; color: #ffffff; border: 1px solid #ffffff; position: absolute; top: 0; right: 0; margin-right: 5px; margin-top: 5px;"><i class="fa-solid fa-close"></i></button>
+
+								<div class="container">
+
+									<div class="row">
+										<div class="col-xl-12 col-lg-12 col-md-12">
+
+											<div class="cndt-head-block">
+
+												<div class="cndt-head-left">
+													
+													<div class="cndt-head-thumb">
+														<figure><img src="assets/img/team-2.jpg" class="img-fluid circle" alt="" style="border: 5px solid #C0C0C0;"></figure>
+													</div>
+													<div class="cndt-head-caption">
+														<div class="cndt-head-caption-top">
+															<div class="cndt-yior-1"><span class="label text-sm-muted" style="background-color: #C0C0C0; color: #000;"><strong>Nível Prata</strong></span></div>
+															<div class="cndt-yior-2" ><h4 class="cndt-title">Aline Santos</h4></div>
+															<div class="cndt-yior-3">
+																<span><i class="fa-solid fa-user-graduate me-1"></i>Auxiliar de RH</span>
+																<span><i class="fa-solid fa-location-dot me-1"></i>Recife, PE
+																</span>
+																<span><i class="fa-solid fa-briefcase me-1"></i>Universidade Federal de Pernambuco</span>
+															</div>
+														</div>
+														<div class="cndt-head-caption-bottom">
+															<div class="cndt-yior-skills">
+																<span style="background-color: #7447E1; color: #ffffff;">Comunicação</span>
+																<span style="background-color: #7447E1; color: #ffffff;">Organização</span>
+																<span style="background-color: #7447E1; color: #ffffff;">Trabalho em Equipe</span>
+																<span style="background-color: #7447E1; color: #ffffff;">Atenção aos Detalhes</span>
+																<span style="background-color: #7447E1; color: #ffffff;">Adaptabilidade</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="cndt-head-right">
+													<button type="button" class="btn btn-primary" title="Fazer Download Currículo">Download CV<i class="fa-solid fa-download ms-2"></i></button>
+													<button type="button" class="btn btn-outline-primary ms-2" title="Salvar Candidato(a)"><i class="fa-solid fa-bookmark"></i></button>
+												</div>
+											
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							
+							<section>
+								<div class="container">
+									<!-- row Start -->
+									<div class="row">
+				
+										<div class="col-xl-8 col-lg-8 col-md-12">
+											<div class="cdtsr-groups-block">
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Sobre</h5></div>
+													<div class="single-cdtsr-body">
+														<p>Sou Aline Santos, Auxiliar de RH com formação pela Universidade Federal de Pernambuco. Tenho habilidades sólidas em comunicação, organização e trabalho em equipe. </p>
+														<p>Sou detalhista, adaptável e sempre busco me aprimorar. Estou sempre pronta para enfrentar novos desafios e contribuir para o sucesso da equipe e da empresa.</p>
+													</div>
+												</div>
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Informações</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="row align-items-center justify-content-between gy-4">
+
+															<div class="col-xl-6 col-lg-6 col-md-6">
+																<div class="cdtx-infr-box">
+																	<div class="cdtx-infr-icon"><i class="fa-regular fa-user"></i></div>
+																	<div class="cdtx-infr-captions">
+																		<h5>Feminino</h5>
+																		<p>Gênero</p>
+																	</div>
+																</div>
+															</div>
+															<div class="col-xl-6 col-lg-6 col-md-6">
+																<div class="cdtx-infr-box">
+																	<div class="cdtx-infr-icon"><i class="fa-solid fa-cake-candles"></i></div>
+																	<div class="cdtx-infr-captions">
+																		<h5>18 Mar 2002</h5>
+																		<p>Data de Nascimento</p>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col-xl-6 col-lg-6 col-md-6">
+																<div class="cdtx-infr-box">
+																	<div class="cdtx-infr-icon"><i class="fa-solid fa-briefcase"></i></div>
+																	<div class="cdtx-infr-captions">
+																		<h5>1 Ano</h5>
+																		<p>Experiência</p>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col-xl-6 col-lg-6 col-md-6">
+																<div class="cdtx-infr-box">
+																	<div class="cdtx-infr-icon"><i class="fa-solid fa-layer-group"></i></div>
+																	<div class="cdtx-infr-captions">
+																		<h5>Presencial</h5>
+																		<p>Tipo de Trabalho</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Curriculos</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="resumes-groups-blox">
+															
+															<div class="single-resumes-blocks">
+																<div class="single-resumes-left">
+																	<div class="single-resumes-icons"><i class="fa-solid fa-file-pdf"></i></div>
+																	<div class="single-resumes-captions"><h5>curriculo-2024.pdf<span>1 Mês Atrás</span></h5></div>
+																</div>
+																<div class="single-resumes-right">
+																	<button type="button" class="btn btn-md" style="background-color: #ece7fa; color: #7447E1;">Download<i class="fa-solid fa-circle-down ms-1"></i></button>
+																</div>
+															</div>
+															
+															<div class="single-resumes-blocks">
+																<div class="single-resumes-left">
+																	<div class="single-resumes-icons"><i class="fa-solid fa-file-word"></i></div>
+																	<div class="single-resumes-captions"><h5>curriculo-2022.docs<span>2 Anos Atrás</span></h5></div>
+																</div>
+																<div class="single-resumes-right">
+																	<button type="button" class="btn btn-md" style="background-color: #ece7fa; color: #7447E1;">Download<i class="fa-solid fa-circle-down ms-1"></i></button>
+																</div>
+															</div>
+															
+														</div>
+													</div>
+												</div>
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Trabalhos Realizados</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="experinc-usr-groups">
+														
+															<div class="single-experinc-block">
+																<div class="single-experinc-lft">
+																	<div class="experinc-thumbs"><figure><img src="assets/img/UFPE.png" class="img-fluid" alt=""></figure></div>
+																</div>
+																<div class="single-experinc-rght">
+																	<div class="experinc-emp-title"><h5>Universidade Federal de Pernambuco</h5><span class="label" style="background-color: #ff891c; color: #fff;">Voluntariado</span></div>
+																	<div class="experinc-post-title">
+																		<h6>Projeto RH</h6>
+																		<div class="experinc-infos-list"><span class="exp-start">2 Meses</span><span class="work-exp-date">JUN 2024 - Atual</span></div>
+																	</div>
+																</div>
+															</div>
+														
+														</div>
+													</div>
+												</div>
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Formação</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="educations-usr-groups">
+														
+															<div class="single-educations-block">
+																<div class="single-educations-lft">
+																	<div class="educations-thumbs"><figure><img src="assets/img/UFPE.png" class="img-fluid" alt=""></figure></div>
+																</div>
+																<div class="single-educations-rght">
+																	<div class="educations-emp-title"><h5>Universidade Federal de Pernambuco</h5></div>
+																	<div class="educations-post-title">
+																		<h6>Tecnólogo em Gestão de Recursos Humanos</h6>
+																	</div>
+																	<div class="educations-infos-list"><span class="exp-start">JUL 2022 - JUL 2024</span></div>
+																</div>
+															</div>					
+														
+														</div>
+													</div>
+												</div>
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Skills</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="cndts-all-skills-list">
+															<span style="background-color: #7447E1; color: #ffffff;">Habilidade de Escrita</span>
+															<span style="background-color: #7447E1; color: #ffffff;">Criatividade</span>
+															<span style="background-color: #7447E1; color: #ffffff;">Organização</span>
+															<span style="background-color: #7447E1; color: #ffffff;">Fácil Adaptação</span>
+															<span style="background-color: #7447E1; color: #ffffff;">Pesquisa e Curadoria de Conteúdo</span>
+														</div>
+													</div>
+												</div>
+												
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Idiomas</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="row gy-4">
+														
+															<div class="col-xl-4 col-lg-4 col-md-6 col-6">
+																<div class="cndts-lgs-blocks">
+																	<div class="cndts-lgs-ico" style="background-color: #ece7fa !important;"><h6 style="color: #7447E1;">ES</h6></div>
+																	<div class="cndts-lgs-captions">
+																		<h5>Espanhol</h5>
+																		<p>Básico</p>
+																	</div>
+																</div>
+															</div>
+															
+															<div class="col-xl-4 col-lg-4 col-md-6 col-6">
+																<div class="cndts-lgs-blocks">
+																	<div class="cndts-lgs-ico" style="background-color: #ece7fa !important;"><h6 style="color: #7447E1;">IN</h6></div>
+																	<div class="cndts-lgs-captions">
+																		<h5>Inglês</h5>
+																		<p>Intermediário</p>
+																	</div>
+																</div>
+															</div>
+															
+															<div class="col-xl-4 col-lg-4 col-md-6 col-6">
+																<div class="cndts-lgs-blocks">
+																	<div class="cndts-lgs-ico" style="background-color: #ece7fa !important;"><h6 style="color: #7447E1;">PT</h6></div>
+																	<div class="cndts-lgs-captions">
+																		<h5>Português</h5>
+																		<p>Nativo</p>
+																	</div>
+																</div>
+															</div>
+														
+														</div>
+													</div>
+												</div>										
+											
+											</div>
+										</div>
+										
+										<div class="col-xl-4 col-lg-4 col-md-12">
+											<div class="sidefr-usr-block mb-4">
+												<div class="sidefr-usr-header">
+													<h4 class="sidefr-usr-title">Entrar em Contato</h4>
+												</div>
+												<div class="sidefr-usr-body">
+													<form>
+														<div class="form-group m-0">
+															<button type="button" class="btn btn-primary fw-medium full-width">Enviar Mensagem</button>
+														</div>
+													</form>
+												</div>
+											</div>
+											
+											<div class="sidefr-usr-block">
+												<div class="cndts-share-block">
+													<div class="cndts-share-title">
+														<h5>Compartilhar Perfil</h5>
+													</div>
+													<div class="cndts-share-list">
+														<ul>
+															<li><a href="JavaScript:Void(0);"><i class="fa-brands fa-facebook-f"></i></a></li>
+															<li><a href="JavaScript:Void(0);"><i class="fa-brands fa-twitter"></i></a></li>
+															<li><a href="JavaScript:Void(0);"><i class="fa-brands fa-google-plus-g"></i></a></li>
+															<li><a href="JavaScript:Void(0);"><i class="fa-brands fa-instagram"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+										
+									</div>
+									<!-- /row -->					
+								</div>	
+							</section>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modalCandidatoEdson" class="modal d-none" style="position: fixed;top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(150, 130, 130, 0.5); z-index: 9999;  display: block; align-items: center;justify-content: center;">
+		<div class="row">
+			<div class="col-xl-12 col-lg-12 col-md-12">
+				<div class="card">
+					<div class="card-body">
+
+						<div class="col-xl-12 col-lg-12 col-md-12">
+
+							<section  style="background-color: #ece7fa;">
+								<button type="button" aria-label="Fechar" id="fecharModalCandidatoEdson" style="background-color: #7447E1; color: #ffffff; border: 1px solid #ffffff; position: absolute; top: 0; right: 0; margin-right: 5px; margin-top: 5px;"><i class="fa-solid fa-close"></i></button>
+
+								<div class="container">
+
+									<div class="row">
+										<div class="col-xl-12 col-lg-12 col-md-12">
+
+											<div class="cndt-head-block">
+
+												<div class="cndt-head-left">
+													
+													<div class="cndt-head-thumb">
+														<figure><img src="assets/img/team-7.jpg" class="img-fluid circle" alt="" style="border: 5px solid #FFD700;"></figure>
+													</div>
+													<div class="cndt-head-caption">
+														<div class="cndt-head-caption-top">
+															<div class="cndt-yior-1"><span class="label text-sm-muted" style="background-color: #FFD700; color: #000;"><strong>Nível Ouro</strong></span></div>
+															<div class="cndt-yior-2" ><h4 class="cndt-title">Edson Araujo</h4></div>
+															<div class="cndt-yior-3">
+																<span><i class="fa-solid fa-user-graduate me-1"></i>Tradutor</span>
+																<span><i class="fa-solid fa-location-dot me-1"></i>Rio de Janeiro, RJ
+																</span>
+																<span><i class="fa-solid fa-briefcase me-1"></i>Universidade Federal do Rio de Janeiro</span>
+															</div>
+														</div>
+														<div class="cndt-head-caption-bottom">
+															<div class="cndt-yior-skills">
+																<span style="background-color: #7447E1; color: #ffffff;">HTML</span>
+																<span style="background-color: #7447E1; color: #ffffff;">CSS</span>
+																<span style="background-color: #7447E1; color: #ffffff;">VS Code</span>
+																<span style="background-color: #7447E1; color: #ffffff;">Git/GitHub</span>
+																<span style="background-color: #7447E1; color: #ffffff;">Javascript</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="cndt-head-right">
+													<button type="button" class="btn btn-primary" title="Fazer Download Currículo">Download CV<i class="fa-solid fa-download ms-2"></i></button>
+													<button type="button" class="btn btn-outline-primary ms-2" title="Salvar Candidato(a)"><i class="fa-solid fa-bookmark"></i></button>
+												</div>
+											
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							
+							<section>
+								<div class="container">
+									<!-- row Start -->
+									<div class="row">
+				
+										<div class="col-xl-8 col-lg-8 col-md-12">
+											<div class="cdtsr-groups-block">
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Sobre</h5></div>
+													<div class="single-cdtsr-body">
+														<p>Sou Edson Araujo, Tradutor com especialização pela Universidade Federal do Rio de Janeiro. Tenho forte conhecimento em HTML, CSS, Javascript e utilizo ferramentas como VS Code e Git/GitHub. </p>
+														<p>Com um olho atento aos detalhes e uma paixão por linguagens, busco sempre entregar traduções precisas e de alta qualidade, adaptadas às necessidades dos projetos digitais.</p>
+													</div>
+												</div>
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Informações</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="row align-items-center justify-content-between gy-4">
+
+															<div class="col-xl-6 col-lg-6 col-md-6">
+																<div class="cdtx-infr-box">
+																	<div class="cdtx-infr-icon"><i class="fa-regular fa-user"></i></div>
+																	<div class="cdtx-infr-captions">
+																		<h5>Masculino</h5>
+																		<p>Gênero</p>
+																	</div>
+																</div>
+															</div>
+															<div class="col-xl-6 col-lg-6 col-md-6">
+																<div class="cdtx-infr-box">
+																	<div class="cdtx-infr-icon"><i class="fa-solid fa-cake-candles"></i></div>
+																	<div class="cdtx-infr-captions">
+																		<h5>05  Jun 1999</h5>
+																		<p>Data de Nascimento</p>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col-xl-6 col-lg-6 col-md-6">
+																<div class="cdtx-infr-box">
+																	<div class="cdtx-infr-icon"><i class="fa-solid fa-briefcase"></i></div>
+																	<div class="cdtx-infr-captions">
+																		<h5>3 Anos</h5>
+																		<p>Experiência</p>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col-xl-6 col-lg-6 col-md-6">
+																<div class="cdtx-infr-box">
+																	<div class="cdtx-infr-icon"><i class="fa-solid fa-layer-group"></i></div>
+																	<div class="cdtx-infr-captions">
+																		<h5>Remoto</h5>
+																		<p>Tipo de Trabalho</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Curriculos</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="resumes-groups-blox">
+															
+															<div class="single-resumes-blocks">
+																<div class="single-resumes-left">
+																	<div class="single-resumes-icons"><i class="fa-solid fa-file-pdf"></i></div>
+																	<div class="single-resumes-captions"><h5>curriculo-2024.pdf<span>1 Mês Atrás</span></h5></div>
+																</div>
+																<div class="single-resumes-right">
+																	<button type="button" class="btn btn-md" style="background-color: #ece7fa; color: #7447E1;">Download<i class="fa-solid fa-circle-down ms-1"></i></button>
+																</div>
+															</div>
+															
+															<div class="single-resumes-blocks">
+																<div class="single-resumes-left">
+																	<div class="single-resumes-icons"><i class="fa-solid fa-file-word"></i></div>
+																	<div class="single-resumes-captions"><h5>curriculo-2022.docs<span>2 Anos Atrás</span></h5></div>
+																</div>
+																<div class="single-resumes-right">
+																	<button type="button" class="btn btn-md" style="background-color: #ece7fa; color: #7447E1;">Download<i class="fa-solid fa-circle-down ms-1"></i></button>
+																</div>
+															</div>
+															
+														</div>
+													</div>
+												</div>
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Trabalhos Realizados</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="experinc-usr-groups">
+														
+															<div class="single-experinc-block">
+																<div class="single-experinc-lft">
+																	<div class="experinc-thumbs"><figure><img src="assets/img/UFRJ.png" class="img-fluid" alt=""></figure></div>
+																</div>
+																<div class="single-experinc-rght">
+																	<div class="experinc-emp-title"><h5>Universidade Federal do Rio de Janeiro</h5><span class="label" style="background-color: #ff891c; color: #fff;">Remunerado</span></div>
+																	<div class="experinc-post-title">
+																		<h6>Front-end Designer</h6>
+																		<div class="experinc-infos-list"><span class="exp-start">2 Meses</span><span class="work-exp-date">JUN 2024 - Atual</span></div>
+																	</div>
+																</div>
+															</div>
+														
+														</div>
+													</div>
+												</div>
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Formação</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="educations-usr-groups">
+														
+															<div class="single-educations-block">
+																<div class="single-educations-lft">
+																	<div class="educations-thumbs"><figure><img src="assets/img/UFRJ.png" class="img-fluid" alt=""></figure></div>
+																</div>
+																<div class="single-educations-rght">
+																	<div class="educations-emp-title"><h5>Universidade Federal do Rio de Janeiro</h5></div>
+																	<div class="educations-post-title">
+																		<h6>Graduação em Ciência da Computação</h6>
+																	</div>
+																	<div class="educations-infos-list"><span class="exp-start">JUL 2020 - JUL 2024</span></div>
+																</div>
+															</div>					
+														
+														</div>
+													</div>
+												</div>
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Skills</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="cndts-all-skills-list">
+															<span style="background-color: #7447E1; color: #ffffff;">HTML</span>
+															<span style="background-color: #7447E1; color: #ffffff;">CSS</span>
+															<span style="background-color: #7447E1; color: #ffffff;">Javascript</span>
+															<span style="background-color: #7447E1; color: #ffffff;">HTML5</span>
+															<span style="background-color: #7447E1; color: #ffffff;">Inglês Fluente</span>
+															<span style="background-color: #7447E1; color: #ffffff;">Habilidade de Pesquisa</span>
+															<span style="background-color: #7447E1; color: #ffffff;">Ótima Escrita</span>
+														</div>
+													</div>
+												</div>
+												
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Idiomas</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="row gy-4">
+														
+															<div class="col-xl-4 col-lg-4 col-md-6 col-6">
+																<div class="cndts-lgs-blocks">
+																	<div class="cndts-lgs-ico" style="background-color: #ece7fa !important;"><h6 style="color: #7447E1;">ES</h6></div>
+																	<div class="cndts-lgs-captions">
+																		<h5>Espanhol</h5>
+																		<p>Básico</p>
+																	</div>
+																</div>
+															</div>
+															
+															<div class="col-xl-4 col-lg-4 col-md-6 col-6">
+																<div class="cndts-lgs-blocks">
+																	<div class="cndts-lgs-ico" style="background-color: #ece7fa !important;"><h6 style="color: #7447E1;">IN</h6></div>
+																	<div class="cndts-lgs-captions">
+																		<h5>Inglês</h5>
+																		<p>Intermediário</p>
+																	</div>
+																</div>
+															</div>
+															
+															<div class="col-xl-4 col-lg-4 col-md-6 col-6">
+																<div class="cndts-lgs-blocks">
+																	<div class="cndts-lgs-ico" style="background-color: #ece7fa !important;"><h6 style="color: #7447E1;">PT</h6></div>
+																	<div class="cndts-lgs-captions">
+																		<h5>Português</h5>
+																		<p>Nativo</p>
+																	</div>
+																</div>
+															</div>
+														
+														</div>
+													</div>
+												</div>										
+											
+											</div>
+										</div>
+										
+										<div class="col-xl-4 col-lg-4 col-md-12">
+											<div class="sidefr-usr-block mb-4">
+												<div class="sidefr-usr-header">
+													<h4 class="sidefr-usr-title">Entrar em Contato</h4>
+												</div>
+												<div class="sidefr-usr-body">
+													<form>
+														<div class="form-group m-0">
+															<button type="button" class="btn btn-primary fw-medium full-width">Enviar Mensagem</button>
+														</div>
+													</form>
+												</div>
+											</div>
+											
+											<div class="sidefr-usr-block">
+												<div class="cndts-share-block">
+													<div class="cndts-share-title">
+														<h5>Compartilhar Perfil</h5>
+													</div>
+													<div class="cndts-share-list">
+														<ul>
+															<li><a href="JavaScript:Void(0);"><i class="fa-brands fa-facebook-f"></i></a></li>
+															<li><a href="JavaScript:Void(0);"><i class="fa-brands fa-twitter"></i></a></li>
+															<li><a href="JavaScript:Void(0);"><i class="fa-brands fa-google-plus-g"></i></a></li>
+															<li><a href="JavaScript:Void(0);"><i class="fa-brands fa-instagram"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+										
+									</div>
+									<!-- /row -->					
+								</div>	
+							</section>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="modalCandidatoAmanda" class="modal d-none" style="position: fixed;top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(150, 130, 130, 0.5); z-index: 99999;  display: block; align-items: center;justify-content: center;">
+		<div class="row">
+			<div class="col-xl-12 col-lg-12 col-md-12">
+				<div class="card">
+					<div class="card-body">
+
+						<div class="col-xl-12 col-lg-12 col-md-12">
+
+							<section  style="background-color: #ece7fa;">
+								<button type="button" aria-label="Fechar" id="fecharModalCandidatoAmanda" style="background-color: #7447E1; color: #ffffff; border: 1px solid #ffffff; position: absolute; top: 0; right: 0; margin-right: 5px; margin-top: 5px;"><i class="fa-solid fa-close"></i></button>
+
+								<div class="container">
+
+									<div class="row">
+										<div class="col-xl-12 col-lg-12 col-md-12">
+
+											<div class="cndt-head-block">
+
+												<div class="cndt-head-left">
+													
+													<div class="cndt-head-thumb">
+														<figure><img src="assets/img/team-8.jpg" class="img-fluid circle" alt="" style="border: 5px solid #CD7F32;"></figure>
+													</div>
+													<div class="cndt-head-caption">
+														<div class="cndt-head-caption-top">
+															<div class="cndt-yior-1"><span class="label text-sm-muted" style="background-color: #CD7F32; color: #000;"><strong>Nível Bronze</strong></span></div>
+															<div class="cndt-yior-2" ><h4 class="cndt-title">Amanda Santos</h4></div>
+															<div class="cndt-yior-3">
+																<span><i class="fa-solid fa-user-graduate me-1"></i>Analista Mkt. Digital</span>
+																<span><i class="fa-solid fa-location-dot me-1"></i>Curitiba, PR
+																</span>
+																<span><i class="fa-solid fa-briefcase me-1"></i>Universidade Federal do Paraná</span>
+															</div>
+														</div>
+														<div class="cndt-head-caption-bottom">
+															<div class="cndt-yior-skills">
+																<span style="background-color: #7447E1; color: #ffffff;">Scrum</span>
+																<span style="background-color: #7447E1; color: #ffffff;">Gestão</span>
+																<span style="background-color: #7447E1; color: #ffffff;">Liderança</span>
+																<span style="background-color: #7447E1; color: #ffffff;">Projetos</span>
+																<span style="background-color: #7447E1; color: #ffffff;">Organização</span>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="cndt-head-right">
+													<button type="button" class="btn btn-primary" title="Fazer Download Currículo">Download CV<i class="fa-solid fa-download ms-2"></i></button>
+													<button type="button" class="btn btn-outline-primary ms-2" title="Salvar Candidato(a)"><i class="fa-solid fa-bookmark"></i></button>
+												</div>
+											
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							
+							<section>
+								<div class="container">
+									<!-- row Start -->
+									<div class="row">
+				
+										<div class="col-xl-8 col-lg-8 col-md-12">
+											<div class="cdtsr-groups-block">
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Sobre</h5></div>
+													<div class="single-cdtsr-body">
+														<p>Sou Amanda Santos, Analista de Marketing Digital formada pela Universidade Federal do Paraná. Tenho competências sólidas em Scrum, gestão, liderança e organização de projetos.</p>
+														<p>Minha paixão é coordenar equipes e projetos, sempre buscando eficiência e inovação para alcançar os melhores resultados no mercado digital.</p>
+													</div>
+												</div>
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Informações</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="row align-items-center justify-content-between gy-4">
+
+															<div class="col-xl-6 col-lg-6 col-md-6">
+																<div class="cdtx-infr-box">
+																	<div class="cdtx-infr-icon"><i class="fa-regular fa-user"></i></div>
+																	<div class="cdtx-infr-captions">
+																		<h5>Feminino</h5>
+																		<p>Gênero</p>
+																	</div>
+																</div>
+															</div>
+															<div class="col-xl-6 col-lg-6 col-md-6">
+																<div class="cdtx-infr-box">
+																	<div class="cdtx-infr-icon"><i class="fa-solid fa-cake-candles"></i></div>
+																	<div class="cdtx-infr-captions">
+																		<h5>25 Jun 2001</h5>
+																		<p>Data de Nascimento</p>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col-xl-6 col-lg-6 col-md-6">
+																<div class="cdtx-infr-box">
+																	<div class="cdtx-infr-icon"><i class="fa-solid fa-briefcase"></i></div>
+																	<div class="cdtx-infr-captions">
+																		<h5>1 Ano</h5>
+																		<p>Experiência</p>
+																	</div>
+																</div>
+															</div>
+
+															<div class="col-xl-6 col-lg-6 col-md-6">
+																<div class="cdtx-infr-box">
+																	<div class="cdtx-infr-icon"><i class="fa-solid fa-layer-group"></i></div>
+																	<div class="cdtx-infr-captions">
+																		<h5>Presencial</h5>
+																		<p>Tipo de Trabalho</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Curriculos</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="resumes-groups-blox">
+															
+															<div class="single-resumes-blocks">
+																<div class="single-resumes-left">
+																	<div class="single-resumes-icons"><i class="fa-solid fa-file-pdf"></i></div>
+																	<div class="single-resumes-captions"><h5>curriculo-2024.pdf<span>1 Mês Atrás</span></h5></div>
+																</div>
+																<div class="single-resumes-right">
+																	<button type="button" class="btn btn-md" style="background-color: #ece7fa; color: #7447E1;">Download<i class="fa-solid fa-circle-down ms-1"></i></button>
+																</div>
+															</div>
+															
+															<div class="single-resumes-blocks">
+																<div class="single-resumes-left">
+																	<div class="single-resumes-icons"><i class="fa-solid fa-file-word"></i></div>
+																	<div class="single-resumes-captions"><h5>curriculo-2022.docs<span>2 Anos Atrás</span></h5></div>
+																</div>
+																<div class="single-resumes-right">
+																	<button type="button" class="btn btn-md" style="background-color: #ece7fa; color: #7447E1;">Download<i class="fa-solid fa-circle-down ms-1"></i></button>
+																</div>
+															</div>
+															
+														</div>
+													</div>
+												</div>
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Trabalhos Realizados</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="experinc-usr-groups">
+														
+															<div class="single-experinc-block">
+																<div class="single-experinc-lft">
+																	<div class="experinc-thumbs"><figure><img src="assets/img/UFPR.png" class="img-fluid" alt=""></figure></div>
+																</div>
+																<div class="single-experinc-rght">
+																	<div class="experinc-emp-title"><h5>Universidade Federal do Paraná</h5><span class="label" style="background-color: #ff891c; color: #fff;">Voluntariado</span></div>
+																	<div class="experinc-post-title">
+																		<h6>Auxiliar de Projetos</h6>
+																		<div class="experinc-infos-list"><span class="exp-start">4 Meses</span><span class="work-exp-date">MAI 2024 - Atual</span></div>
+																	</div>
+																</div>
+															</div>
+														
+														</div>
+													</div>
+												</div>
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Formação</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="educations-usr-groups">
+														
+															<div class="single-educations-block">
+																<div class="single-educations-lft">
+																	<div class="educations-thumbs"><figure><img src="assets/img/UFPR.png" class="img-fluid" alt=""></figure></div>
+																</div>
+																<div class="single-educations-rght">
+																	<div class="educations-emp-title"><h5>Universidade Federal do Paraná</h5></div>
+																	<div class="educations-post-title">
+																		<h6>Tecnólogo em Gestão de Projetos</h6>
+																	</div>
+																	<div class="educations-infos-list"><span class="exp-start">JUL 2022 - JUL 2024</span></div>
+																</div>
+															</div>					
+														
+														</div>
+													</div>
+												</div>
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Skills</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="cndts-all-skills-list">
+															<span style="background-color: #7447E1; color: #ffffff;">Mídia Social</span>
+															<span style="background-color: #7447E1; color: #ffffff;">Análise de Dados</span>
+															<span style="background-color: #7447E1; color: #ffffff;">WordPress</span>
+															<span style="background-color: #7447E1; color: #ffffff;">Gestão de Projetos</span>
+															<span style="background-color: #7447E1; color: #ffffff;">Scrum</span>
+														</div>
+													</div>
+												</div>
+												
+												
+												<div class="single-cdtsr-block">
+													<div class="single-cdtsr-header"><h5>Idiomas</h5></div>
+													<div class="single-cdtsr-body">
+														<div class="row gy-4">
+														
+															<div class="col-xl-4 col-lg-4 col-md-6 col-6">
+																<div class="cndts-lgs-blocks">
+																	<div class="cndts-lgs-ico" style="background-color: #ece7fa !important;"><h6 style="color: #7447E1;">ES</h6></div>
+																	<div class="cndts-lgs-captions">
+																		<h5>Espanhol</h5>
+																		<p>Básico</p>
+																	</div>
+																</div>
+															</div>
+															
+															<div class="col-xl-4 col-lg-4 col-md-6 col-6">
+																<div class="cndts-lgs-blocks">
+																	<div class="cndts-lgs-ico" style="background-color: #ece7fa !important;"><h6 style="color: #7447E1;">IN</h6></div>
+																	<div class="cndts-lgs-captions">
+																		<h5>Inglês</h5>
+																		<p>Intermediário</p>
+																	</div>
+																</div>
+															</div>
+															
+															<div class="col-xl-4 col-lg-4 col-md-6 col-6">
+																<div class="cndts-lgs-blocks">
+																	<div class="cndts-lgs-ico" style="background-color: #ece7fa !important;"><h6 style="color: #7447E1;">PT</h6></div>
+																	<div class="cndts-lgs-captions">
+																		<h5>Português</h5>
+																		<p>Nativo</p>
+																	</div>
+																</div>
+															</div>
+														
+														</div>
+													</div>
+												</div>										
+											
+											</div>
+										</div>
+										
+										<div class="col-xl-4 col-lg-4 col-md-12">
+											<div class="sidefr-usr-block mb-4">
+												<div class="sidefr-usr-header">
+													<h4 class="sidefr-usr-title">Entrar em Contato</h4>
+												</div>
+												<div class="sidefr-usr-body">
+													<form>
+														<div class="form-group m-0">
+															<button type="button" class="btn btn-primary fw-medium full-width">Enviar Mensagem</button>
+														</div>
+													</form>
+												</div>
+											</div>
+											
+											<div class="sidefr-usr-block">
+												<div class="cndts-share-block">
+													<div class="cndts-share-title">
+														<h5>Compartilhar Perfil</h5>
+													</div>
+													<div class="cndts-share-list">
+														<ul>
+															<li><a href="JavaScript:Void(0);"><i class="fa-brands fa-facebook-f"></i></a></li>
+															<li><a href="JavaScript:Void(0);"><i class="fa-brands fa-twitter"></i></a></li>
+															<li><a href="JavaScript:Void(0);"><i class="fa-brands fa-google-plus-g"></i></a></li>
+															<li><a href="JavaScript:Void(0);"><i class="fa-brands fa-instagram"></i></a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+										
+									</div>
+									<!-- /row -->					
+								</div>	
+							</section>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/popper.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
@@ -2133,6 +3242,55 @@
 			}
 	</script>
 	
+	<!-- MODAIS CANDIDATOS -->
+	<script>
+		var fecharModalCandidatoJoao = document.getElementById("fecharModalCandidatoJoao");
+		var fecharModalCandidatoAline = document.getElementById("fecharModalCandidatoAline");
+		var fecharModalCandidatoEdson = document.getElementById("fecharModalCandidatoEdson");
+		var fecharModalCandidatoAmanda = document.getElementById("fecharModalCandidatoAmanda");
+		
+		fecharModalCandidatoJoao.addEventListener("click", function() {
+			var modalCandidatoJoao = document.getElementById("modalCandidatoJoao");
+			modalCandidatoJoao.classList.add("d-none"); // Oculta a modal
+		});
+
+		fecharModalCandidatoAline.addEventListener("click", function() {
+			var modalCandidatoAline = document.getElementById("modalCandidatoAline");
+			modalCandidatoAline.classList.add("d-none"); // Oculta a modal
+		});
+
+		fecharModalCandidatoEdson.addEventListener("click", function() {
+			var modalCandidatoEdson = document.getElementById("modalCandidatoEdson");
+			modalCandidatoEdson.classList.add("d-none"); // Oculta a modal
+		});
+
+		fecharModalCandidatoAmanda.addEventListener("click", function() {
+			var modalCandidatoAmanda = document.getElementById("modalCandidatoAmanda");
+			modalCandidatoAmanda.classList.add("d-none"); // Oculta a modal
+		});
+
+		function mostrarModalCandidatoJoao() {
+			var modalCandidatoJoao = document.getElementById("modalCandidatoJoao");
+			modalCandidatoJoao.classList.remove("d-none"); // Oculta a modal
+		}
+
+		function mostrarModalCandidatoAline() {
+			var modalCandidatoAline = document.getElementById("modalCandidatoAline");
+			modalCandidatoAline.classList.remove("d-none"); // Oculta a modal
+		}
+
+
+		function mostrarModalCandidatoEdson() {
+			var modalCandidatoEdson = document.getElementById("modalCandidatoEdson");
+			modalCandidatoEdson.classList.remove("d-none"); // Oculta a modal
+		}
+
+		function mostrarModalCandidatoAmanda() {
+			var modalCandidatoAmanda = document.getElementById("modalCandidatoAmanda");
+			modalCandidatoAmanda.classList.remove("d-none"); // Oculta a modal
+		}
+
+	</script>
 </body>
 
 </html>

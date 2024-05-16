@@ -3203,15 +3203,15 @@ nav a {
 .account-drop .dropdown-menu {
     top:70px !important;
     right: 0 !important;
-    background: #fff;
-    box-shadow: none;
-    min-width:300px;
+    background: #fff !important;
+    box-shadow: none !important;
+    min-width:300px !important;
     left: initial !important;
-    border: none;
-    padding: 0rem;
-    overflow: hidden;
-	z-index:99;
-    border-radius: 0.4rem;
+    border: none !important;
+    padding: 0rem !important;
+    overflow: hidden !important;
+	z-index:99 !important;
+    border-radius: 0.4rem ;
     box-shadow: 0 0 20px 0 rgb(62 28 131 / 10%);
     -webkit-box-shadow: 0 0 20px 0 rgb(62 28 131 / 10%);
 }

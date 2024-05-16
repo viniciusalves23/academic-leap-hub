@@ -4930,17 +4930,22 @@ nav a {
 .account-drop .dropdown-menu {
   top: 70px !important;
   right: 0 !important;
-  background: var(--bs-white-bg);
-  box-shadow: none;
-  min-width: 300px;
+  background: var(--bs-white-bg) !important;
+  box-shadow: none !important;
+  min-width: 300px !important;
   left: initial !important;
-  border: none;
+  border: none !important;
   padding: 0rem;
-  overflow: hidden;
-  z-index: 99;
+  overflow: hidden !important;
+  z-index: 99 !important;
   border-radius: 0.4rem;
-  box-shadow: 0 0 20px 0 rgba(62, 28, 131, 0.1);
-  -webkit-box-shadow: 0 0 20px 0 rgba(62, 28, 131, 0.1);
+  box-shadow: 0 0 20px 0 rgba(16, 14, 20, 0.1) !important;
+  -webkit-box-shadow: 0 0 20px 0 rgba(62, 28, 131, 0.1) !important;
+}
+
+
+.account-drop .dropdown-menu-notificacoes {
+  right: -100%  !important;
 }
 
 .drp_menu_headr {
